@@ -29,23 +29,14 @@ Remember that action is the ultimate cure for fear, and once you start moving, t
       <div className="max-w-2xl mx-auto">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold text-slate-900 mb-2">Daily Core Run</h1>
+          <h1 className="text-4xl font-bold text-slate-900 mb-2">Text Message Posting Format</h1>
           <p className="text-lg text-slate-600">
             Daily accountability post to your coach on business education takeaways
           </p>
         </div>
 
-        {/* Description */}
-        <div className="bg-white rounded-lg shadow-sm p-6 mb-8 border-l-4 border-blue-500">
-          <p className="text-slate-700 font-semibold mb-2">Posting Format</p>
-          <p className="text-slate-600 text-sm">
-            Share your daily learnings from books and podcasts with your coach to stay accountable 
-            for your self-education in business.
-          </p>
-        </div>
-
         {/* Example Post */}
-        <div className="bg-white rounded-lg shadow-md p-8 border-t-4 border-indigo-600 relative">
+        <div className="bg-white rounded-lg shadow-md p-8 border-t-4 relative">
           {/* Copy Button */}
           <button
             onClick={handleCopy}
@@ -101,12 +92,6 @@ Remember that action is the ultimate cure for fear, and once you start moving, t
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="mt-12 p-4 bg-blue-50 rounded-lg border border-blue-200 text-center">
-          <p className="text-sm text-slate-600">
-            Use this format to share your daily learning takeaways with your coach
-          </p>
-        </div>
       </div>
     </div>
   );
