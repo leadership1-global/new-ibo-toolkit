@@ -42,10 +42,15 @@ jobs:
         run: npm run build
         working-directory: site
 
+      - name: Create roadmap directory structure
+        run: |
+          mkdir -p site/out_deploy/roadmap
+          cp -r site/out/* site/out_deploy/roadmap/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site/out
+          path: site/out_deploy
 
   deploy:
     environment:
