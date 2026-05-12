@@ -5,7 +5,7 @@ export default function RoadmapPage() {
         <h1 className="text-3xl md:text-4xl font-bold">
           Welcome to the Team
         </h1>
-        <h2 className="text-xl md:text-2xl text-gray-500 mt-2 font-medium">
+        <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mt-2 font-medium">
           Your Journey to 10X Growth Starts Here
         </h2>
       </div>
@@ -18,7 +18,7 @@ export default function RoadmapPage() {
         high-achievers dedicated to professional excellence and personal mastery.
       </p>
 
-      <hr className="border-gray-300" />
+      <hr className="border-gray-300 dark:border-gray-700" />
 
       <section className="space-y-4">
         <h2 className="text-2xl font-semibold">
@@ -49,7 +49,7 @@ export default function RoadmapPage() {
         </ul>
       </section>
 
-      <hr className="border-gray-300" />
+      <hr className="border-gray-300 dark:border-gray-700" />
 
       <section className="space-y-4">
         <h2 className="text-2xl font-semibold">
@@ -79,7 +79,7 @@ export default function RoadmapPage() {
         </ol>
       </section>
 
-      <hr className="border-gray-300" />
+      <hr className="border-gray-300 dark:border-gray-700" />
 
       <section className="space-y-4">
         <h2 className="text-2xl font-semibold">A Note on Professionalism</h2>
@@ -89,7 +89,7 @@ export default function RoadmapPage() {
           professional presentation. Remember: we work hard, we work smart, and
           we represent this opportunity with the prestige it deserves.
         </p>
-        <blockquote className="border-l-4 border-gray-400 pl-4 italic text-gray-600">
+        <blockquote className="border-l-4 border-gray-400 dark:border-gray-600 pl-4 italic text-gray-600 dark:text-gray-400">
           &ldquo;The size of your success is measured by the strength of your
           desire, the size of your dream, and how you handle disappointment
           along the way.&rdquo;
