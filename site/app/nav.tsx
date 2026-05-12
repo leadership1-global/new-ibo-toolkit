@@ -6,11 +6,11 @@ import { usePathname } from "next/navigation";
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/iboroadmap", label: "IBO Roadmap" },
+  { href: "/welcome", label: "Welcome" },
   { href: "/habits", label: "Habits" },
   { href: "/phases", label: "Phases" },
   { href: "/books", label: "Books" },
-  { href: "/core-run", label: "Daily Core Run" },
+  { href: "/core", label: "Core" },
   { href: "/income", label: "Income Calculator" },
   { href: "/checklist", label: "Checklist" },
 ];
@@ -47,8 +47,8 @@ export function Navigation({ children }: NavigationProps) {
         onClick={() => setIsOpen(false)}
         className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
           isActive
-            ? "bg-slate-900 text-white shadow-sm shadow-slate-900/20"
-            : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+            ? "bg-slate-900 text-white shadow-sm shadow-slate-900/20 dark:bg-slate-100 dark:text-slate-900 dark:shadow-slate-100/20"
+            : "text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-slate-100"
         }`}
       >
         {children}
@@ -57,20 +57,20 @@ export function Navigation({ children }: NavigationProps) {
   }
 
   return (
-    <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,_rgba(56,189,248,0.16),_transparent_36%),radial-gradient(circle_at_top_right,_rgba(249,115,22,0.14),_transparent_32%),linear-gradient(180deg,_#f8fafc_0%,_#eef2ff_100%)]">
-      <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/85 backdrop-blur-xl">
+    <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,_rgba(56,189,248,0.16),_transparent_36%),radial-gradient(circle_at_top_right,_rgba(249,115,22,0.14),_transparent_32%),linear-gradient(180deg,_#f8fafc_0%,_#eef2ff_100%)] dark:bg-[radial-gradient(circle_at_top_left,_rgba(56,189,248,0.16),_transparent_36%),radial-gradient(circle_at_top_right,_rgba(249,115,22,0.14),_transparent_32%),linear-gradient(180deg,_#0f172a_0%,_#1e1b4b_100%)]">
+      <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/85 dark:border-slate-800/80 dark:bg-slate-900/85 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
           <div className="flex min-w-0 items-center gap-3">
             <button
               type="button"
               onClick={() => setIsOpen(true)}
               aria-label="Open navigation menu"
-              className="relative inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-slate-200 bg-white text-slate-900 shadow-sm transition hover:-translate-y-px hover:shadow-md"
+              className="relative inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-slate-200 bg-white text-slate-900 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 shadow-sm transition hover:-translate-y-px hover:shadow-md"
             >
               <span className="relative block h-5 w-5">
-                <span className="absolute left-0 top-0 h-0.5 w-5 rounded-full bg-slate-900" />
-                <span className="absolute left-0 top-2 h-0.5 w-5 rounded-full bg-slate-900" />
-                <span className="absolute left-0 top-4 h-0.5 w-5 rounded-full bg-slate-900" />
+                <span className="absolute left-0 top-0 h-0.5 w-5 rounded-full bg-slate-900 dark:bg-slate-100" />
+                <span className="absolute left-0 top-2 h-0.5 w-5 rounded-full bg-slate-900 dark:bg-slate-100" />
+                <span className="absolute left-0 top-4 h-0.5 w-5 rounded-full bg-slate-900 dark:bg-slate-100" />
               </span>
             </button>
 
@@ -106,7 +106,7 @@ export function Navigation({ children }: NavigationProps) {
         />
 
         <aside
-          className={`absolute left-0 top-0 h-full w-[86vw] max-w-sm border-r border-slate-200/60 bg-white/95 p-5 backdrop-blur-xl transition-transform duration-300 ease-out ${
+          className={`absolute left-0 top-0 h-full w-[86vw] max-w-sm border-r border-slate-200/60 bg-white/95 dark:border-slate-800/60 dark:bg-slate-900/95 p-5 backdrop-blur-xl transition-transform duration-300 ease-out ${
             isOpen ? "translate-x-0 shadow-2xl" : "-translate-x-full shadow-none"
           }`}
         >
@@ -123,7 +123,7 @@ export function Navigation({ children }: NavigationProps) {
             <button
               type="button"
               onClick={() => setIsOpen(false)}
-              className="rounded-2xl border border-slate-200 px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-slate-900"
+              className="rounded-2xl border border-slate-200 px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 dark:border-slate-700 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-slate-100"
             >
               Close
             </button>

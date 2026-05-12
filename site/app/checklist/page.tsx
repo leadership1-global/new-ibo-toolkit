@@ -172,7 +172,7 @@ export default function Checklist() {
     };
 
     return (
-        <div className="min-h-screen bg-slate-50 text-slate-800">
+        <div className="min-h-screen bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-200">
             <div className="max-w-4xl mx-auto px-6 py-12">
                 {/* Sticky header with name input */}
                 <div
@@ -180,8 +180,8 @@ export default function Checklist() {
     sticky top-[77px] z-30
     mb-8
     rounded-b-3xl rounded-t-none md:rounded-3xl
-        border-0 border-b border-slate-200 md:border
-    bg-white
+        border-0 border-b border-slate-200 dark:border-slate-800 md:border
+    bg-white dark:bg-slate-900
     px-6 pt-4 pb-4
         shadow-[0_8px_24px_-18px_rgba(15,23,42,0.35)] md:shadow-xl md:shadow-slate-200/60
     isolate
@@ -189,7 +189,7 @@ export default function Checklist() {
                 >
                     <div className="mb-1 flex flex-col items-center justify-center text-center">
                         <div className="flex items-center justify-center gap-2">
-                            <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900 text-balance">
+                            <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100 text-balance">
                                 {trimmedName ? `${trimmedName}'s` : "New Partner Launch Checklist"}
                             </h1>
                             {trimmedName && (
@@ -221,7 +221,7 @@ export default function Checklist() {
                                     onChange={handleNameChange}
                                     onKeyDown={handleNameKeyDown}
                                     placeholder="Enter your name and press Enter"
-                                    className="w-80 rounded-full border border-slate-200 bg-white px-4 py-2.5 text-slate-900 shadow-sm outline-none transition focus:border-slate-400 focus:ring-4 focus:ring-slate-100"
+                                    className="w-80 rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-2.5 text-slate-900 dark:text-slate-100 shadow-sm outline-none transition focus:border-slate-400 focus:ring-4 focus:ring-slate-100 dark:focus:ring-slate-800"
                                 />
                             </div>
                         </>
@@ -231,9 +231,9 @@ export default function Checklist() {
                 {/* Checklist content */}
                 <div className="space-y-8">
                     {checklist.map((section, sectionIndex) => (
-                        <div key={section.title} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm shadow-slate-200/60">
+                        <div key={section.title} className="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-6 shadow-sm shadow-slate-200/60 dark:shadow-slate-900/60">
                             <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                                <h2 className="text-2xl font-semibold text-slate-900">
+                                <h2 className="text-2xl font-semibold text-slate-900 dark:text-slate-100">
                                     {section.title}
                                 </h2>
                                 <SectionToggle
@@ -254,7 +254,7 @@ export default function Checklist() {
                                         />
                                         <label
                                             htmlFor={item.id}
-                                            className={`cursor-pointer text-gray-700 ${item.checked ? "line-through text-gray-500" : ""
+                                            className={`cursor-pointer text-gray-700 dark:text-gray-300 ${item.checked ? "line-through text-gray-500 dark:text-gray-500" : ""
                                                 }`}
                                         >
                                             {item.text}
@@ -265,8 +265,8 @@ export default function Checklist() {
                         </div>
                     ))}
 
-                    <div className="rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm shadow-slate-200/60">
-                        <blockquote className="text-lg italic text-slate-700">
+                    <div className="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-6 text-center shadow-sm shadow-slate-200/60 dark:shadow-slate-900/60">
+                        <blockquote className="text-lg italic text-slate-700 dark:text-slate-300">
                             &ldquo;Success in this business is not about being perfect. It&apos;s about staying connected, staying coachable, and staying consistent.&rdquo;
                         </blockquote>
                     </div>
