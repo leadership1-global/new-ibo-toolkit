@@ -34,6 +34,11 @@ const HabitIcon = ({ type, color }: { type: string; color: string }) => {
         <path d="M18 6h-2c0-2.21-1.79-4-4-4s-4 1.79-4 4H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-5-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm5 16H6V8h12v12zm-5-10c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3z" />
       </svg>
     ),
+    cart: (
+      <svg className={iconClasses} fill="currentColor" viewBox="0 0 24 24">
+        <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2zM7.17 14.75L7.1 15H19v2H7c-1.1 0-2-.9-2-2 0-.28.06-.54.16-.77L6.62 11H3V9h4.62l.27-.63L9.5 4H5V2h6l-1.63 3.82L7.17 14.75zM9.5 4l-1.13 2.64-.27.61-.82 1.92L6.1 13h11.45L19 8H9.5z" />
+      </svg>
+    ),
     megaphone: (
       <svg className={iconClasses} fill="currentColor" viewBox="0 0 24 24">
         <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z" />
@@ -153,7 +158,7 @@ export default function Habits() {
           <div className="group bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/20 rounded-xl p-4 border border-green-200 dark:border-green-700/50 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
             <div className="flex gap-3">
               <div className="flex-shrink-0 text-green-600 dark:text-green-400">
-                <HabitIcon type="store" color="text-green-600 dark:text-green-400" />
+                <HabitIcon type="cart" color="text-green-600 dark:text-green-400" />
               </div>
               <div className="flex-1">
                 <h3 className="font-bold text-2xl text-green-900 dark:text-green-100 mb-1">5. Be a Product of the Product</h3>
@@ -239,113 +244,91 @@ export default function Habits() {
         </div>
       </section>
 
-      {/* Habit Frequency Table */}
+      {/* Habit Frequency Guide */}
       <section className="mb-8">
         <h2 className="text-2xl font-bold text-center mb-6 text-gray-800 dark:text-gray-200">
           Habit Frequency Guide
         </h2>
-        
-        {/* Mobile Layout - Stacked */}
-        <div className="block md:hidden space-y-6">
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700">
-            <h3 className="font-semibold text-xl text-gray-700 dark:text-gray-300 mb-3">Daily</h3>
-            <ul className="list-disc list-inside space-y-1 text-lg text-gray-600 dark:text-gray-400">
-              <li>Reading (15–30 Minutes)</li>
-              <li>Listening to Podcasts</li>
-              <li>Staying Accountable</li>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {/* Daily */}
+          <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/20 rounded-xl p-4 border border-blue-200 dark:border-blue-700/50">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-1 h-6 bg-gradient-to-b from-blue-600 to-blue-400 rounded-full"></div>
+              <h3 className="font-semibold text-blue-700 dark:text-blue-400">Daily</h3>
+            </div>
+            <ul className="space-y-2">
+              {["Read daily (15–30 minutes)", "Listen to audios/podcasts daily", "Staying accountable"].map((item) => (
+                <li key={item} className="flex items-start gap-2 text-sm text-gray-700 dark:text-gray-300">
+                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 flex-shrink-0"></span>
+                  {item}
+                </li>
+              ))}
             </ul>
           </div>
-          
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700">
-            <h3 className="font-semibold text-xl text-gray-700 dark:text-gray-300 mb-3">Weekly</h3>
-            <ul className="list-disc list-inside space-y-1 text-lg text-gray-600 dark:text-gray-400">
-              <li>Attend All Associations</li>
-              <li>Showing The Plan</li>
-              <li>Develop Customers</li>
-              <li>Staying Accountable</li>
+
+          {/* Weekly */}
+          <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/20 rounded-xl p-4 border border-green-200 dark:border-green-700/50">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-1 h-6 bg-gradient-to-b from-green-600 to-green-400 rounded-full"></div>
+              <h3 className="font-semibold text-green-700 dark:text-green-400">Weekly</h3>
+            </div>
+            <ul className="space-y-2">
+              {["Attend all associations", "Showing the plan", "Develop a retail base", "Staying accountable"].map((item) => (
+                <li key={item} className="flex items-start gap-2 text-sm text-gray-700 dark:text-gray-300">
+                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-green-400 flex-shrink-0"></span>
+                  {item}
+                </li>
+              ))}
             </ul>
           </div>
-          
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700">
-            <h3 className="font-semibold text-xl text-gray-700 dark:text-gray-300 mb-3">Monthly</h3>
-            <ul className="list-disc list-inside space-y-1 text-lg text-gray-600 dark:text-gray-400">
-              <li>Podcasting App Subscription</li>
-              <li>Redirect Shopping</li>
-              <li>Counseling</li>
-              <li>Staying Accountable</li>
+
+          {/* Monthly */}
+          <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/20 rounded-xl p-4 border border-purple-200 dark:border-purple-700/50">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-1 h-6 bg-gradient-to-b from-purple-600 to-purple-400 rounded-full"></div>
+              <h3 className="font-semibold text-purple-700 dark:text-purple-400">Monthly</h3>
+            </div>
+            <ul className="space-y-2">
+              {["Podcasting app subscription", "Redirect shopping", "Counseling", "Staying accountable"].map((item) => (
+                <li key={item} className="flex items-start gap-2 text-sm text-gray-700 dark:text-gray-300">
+                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-purple-400 flex-shrink-0"></span>
+                  {item}
+                </li>
+              ))}
             </ul>
           </div>
-        </div>
-        
-        {/* Desktop Layout - Table */}
-        <div className="hidden md:block overflow-x-auto">
-          <table className="w-full border-collapse border border-gray-300 dark:border-gray-600 rounded-lg">
-            <thead>
-              <tr className="bg-gray-100 dark:bg-gray-800">
-                <th className="border border-gray-300 dark:border-gray-600 px-4 py-3 text-left font-semibold text-xl text-gray-700 dark:text-gray-300">Daily</th>
-                <th className="border border-gray-300 dark:border-gray-600 px-4 py-3 text-left font-semibold text-xl text-gray-700 dark:text-gray-300">Weekly</th>
-                <th className="border border-gray-300 dark:border-gray-600 px-4 py-3 text-left font-semibold text-xl text-gray-700 dark:text-gray-300">Monthly</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">
-                  <ul className="list-disc list-inside space-y-1 text-lg">
-                    <li>Read Daily (15–30 Minutes)</li>
-                    <li>Listen to Audios/Podcasts Daily</li>
-                    <li>Staying Accountable</li>
-                  </ul>
-                </td>
-                <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">
-                  <ul className="list-disc list-inside space-y-1 text-lg">
-                    <li>Attend All Associations</li>
-                    <li>Showing The Plan</li>
-                    <li>Develop a Retail Base</li>
-                    <li>Staying Accountable</li>
-                  </ul>
-                </td>
-                <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">
-                  <ul className="list-disc list-inside space-y-1 text-lg">
-                    <li>Podcasting App Subscription</li>
-                    <li>Redirect Shopping</li>
-                    <li>Counseling</li>
-                    <li>Staying Accountable</li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </section>
 
-      {/* Note & Pro Tip */}
-      <div className="border-t border-gray-200 dark:border-gray-700 pt-4">
-        <div className="grid md:grid-cols-2 gap-4">
-          <div className="bg-gradient-to-br from-amber-50 to-amber-100 dark:from-amber-900/30 dark:to-amber-800/20 border-l-4 border-amber-500 p-4 rounded-r-xl hover:shadow-lg transition-all duration-300">
-            <div className="flex gap-3">
-              <div className="text-2xl">💡</div>
-              <div>
-                <p className="font-bold text-lg text-amber-900 dark:text-amber-100 mb-2">Note</p>
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  These nine habits create a balanced approach, ensuring that as your business grows (Pillar 3), your personal capacity (Pillar 1) and belief in the brand (Pillar 2) grow along with it.
-                </p>
-              </div>
-            </div>
+  {/* Note & Pro Tip */ }
+  <div className="border-t border-gray-200 dark:border-gray-700 pt-4">
+    <div className="grid md:grid-cols-2 gap-4">
+      <div className="bg-gradient-to-br from-amber-50 to-amber-100 dark:from-amber-900/30 dark:to-amber-800/20 border-l-4 border-amber-500 p-4 rounded-r-xl hover:shadow-lg transition-all duration-300">
+        <div className="flex gap-3">
+          <div className="text-2xl">💡</div>
+          <div>
+            <p className="font-bold text-lg text-amber-900 dark:text-amber-100 mb-2">Note</p>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+              These nine habits create a balanced approach, ensuring that as your business grows (Pillar 3), your personal capacity (Pillar 1) and belief in the brand (Pillar 2) grow along with it.
+            </p>
           </div>
+        </div>
+      </div>
 
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/20 border-l-4 border-blue-500 p-4 rounded-r-xl hover:shadow-lg transition-all duration-300">
-            <div className="flex gap-3">
-              <div className="text-2xl">⭐</div>
-              <div>
-                <p className="font-bold text-lg text-blue-900 dark:text-blue-100 mb-2">Pro Tip</p>
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  Mastery doesn&apos;t happen overnight. Most successful builders suggest picking one or two habits to master each month until the full routine becomes second nature.
-                </p>
-              </div>
-            </div>
+      <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/20 border-l-4 border-blue-500 p-4 rounded-r-xl hover:shadow-lg transition-all duration-300">
+        <div className="flex gap-3">
+          <div className="text-2xl">⭐</div>
+          <div>
+            <p className="font-bold text-lg text-blue-900 dark:text-blue-100 mb-2">Pro Tip</p>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+              Mastery doesn&apos;t happen overnight. Most successful builders suggest picking one or two habits to master each month until the full routine becomes second nature.
+            </p>
           </div>
         </div>
       </div>
     </div>
+  </div>
+    </div >
   );
 }
