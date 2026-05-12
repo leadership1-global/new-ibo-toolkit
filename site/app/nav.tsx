@@ -33,6 +33,7 @@ export function Navigation() {
         <NavLink href="/books">Books</NavLink>
         <NavLink href="/core-run">Daily Core Run</NavLink>
         <NavLink href="/income">Income Calculator</NavLink>
+        <NavLink href="/checklist">Checklist</NavLink>
       </div>
     </nav>
   );
