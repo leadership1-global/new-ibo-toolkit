@@ -45,11 +45,10 @@ export function Navigation({ children }: NavigationProps) {
       <Link
         href={href}
         onClick={() => setIsOpen(false)}
-        className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-          isActive
-            ? "bg-slate-900 text-white shadow-sm shadow-slate-900/20 dark:bg-slate-100 dark:text-slate-900 dark:shadow-slate-100/20"
-            : "text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-slate-100"
-        }`}
+        className={`rounded-full px-4 py-2 text-2xl font-medium transition-colors duration-200 ${isActive
+          ? "bg-slate-900 text-white shadow-sm shadow-slate-900/20 dark:bg-slate-100 dark:text-slate-900 dark:shadow-slate-100/20"
+          : "text-slate-600 hover:bg-slate-200 hover:text-slate-900 hover:shadow-md dark:text-slate-400 dark:hover:bg-slate-700 dark:hover:text-slate-100"
+          }`}
       >
         {children}
       </Link>
@@ -106,9 +105,8 @@ export function Navigation({ children }: NavigationProps) {
         />
 
         <aside
-          className={`absolute left-0 top-0 h-full w-[86vw] max-w-sm border-r border-slate-200/60 bg-white/95 dark:border-slate-800/60 dark:bg-slate-900/95 p-5 backdrop-blur-xl transition-transform duration-300 ease-out ${
-            isOpen ? "translate-x-0 shadow-2xl" : "-translate-x-full shadow-none"
-          }`}
+          className={`absolute left-0 top-0 h-full w-[86vw] max-w-sm border-r border-slate-200/60 bg-white/95 dark:border-slate-800/60 dark:bg-slate-900/95 p-5 backdrop-blur-xl transition-transform duration-300 ease-out ${isOpen ? "translate-x-0 shadow-2xl" : "-translate-x-full shadow-none"
+            }`}
         >
           <div className="mb-6 flex items-start justify-between gap-4">
             <div>

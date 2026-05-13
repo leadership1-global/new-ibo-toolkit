@@ -5,21 +5,40 @@ import React, { useState } from 'react';
 export default function CoreRunPage() {
   const [copied, setCopied] = useState(false);
 
-  const postContent = `Day 1
+  const postData = {
+    day: "Day 1",
+    sections: [
+      {
+        title: "Book: Magic of Thinking Big",
+        items: [
+          "Successful people specialize in retrieving only positive thoughts from their memory bank",
+          "To think confidently, act confidently."
+        ]
+      },
+      {
+        title: "Audio: Manny and Candace Winston",
+        items: [
+          "Action Precedes Motivation. Stop waiting for the \"perfect\" moment or a burst of inspiration to get started.",
+          "Consistency creates confidence. The more you show up and execute, the more capable and powerful you feel, which in turn fuels further action."
+        ],
+      }
+    ]
+  };
 
-Book: Magic of Thinking Big
-- Successful people specialize in retrieving only positive thoughts from their memory bank
-- To think confidently, act confidently.
-
-Audio: Manny and Candace Winston
-- Action Precedes Motivation
-
-Stop waiting for the "perfect" moment or a burst of inspiration to get started. Motivation typically comes after you start doing the work, not before. Just like hitting the gym, you might have to force yourself to show up, but it is the "reps" themselves that generate the excitement to reach the next step.
-
-Remember that action is the ultimate cure for fear, and once you start moving, the momentum will follow.`;
+  const generatePostText = () => {
+    let text = `${postData.day}\n\n`;
+    postData.sections.forEach(section => {
+      text += `${section.title}\n`;
+      section.items.forEach(item => {
+        text += `- ${item}\n`;
+      });
+      text += `\n`;
+    });
+    return text.trim();
+  };
 
   const handleCopy = async () => {
-    await navigator.clipboard.writeText(postContent);
+    await navigator.clipboard.writeText(generatePostText());
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -36,7 +55,7 @@ Remember that action is the ultimate cure for fear, and once you start moving, t
         </div>
 
         {/* Example Post */}
-        <div className="bg-white dark:bg-slate-800 rounded-lg shadow-md p-8 border-t-4 relative">
+        <div className="bg-white dark:bg-slate-800 rounded-lg shadow-md p-5 border-t-4 relative">
           {/* Copy Button */}
           <button
             onClick={handleCopy}
@@ -57,45 +76,20 @@ Remember that action is the ultimate cure for fear, and once you start moving, t
             )}
           </button>
 
-          <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-6">Day 1</h2>
-
-          {/* Book Section */}
-          <div className="mb-8">
-            <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-3">Book: Magic of Thinking Big</h3>
-            <ul className="space-y-2 ml-6">
-              <li className="flex gap-3">
-                <span className="text-indigo-600 font-bold">-</span>
-                <span className="text-slate-700 dark:text-slate-300">
-                  Successful people specialize in retrieving only positive thoughts from their memory bank
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-indigo-600 font-bold">-</span>
-                <span className="text-slate-700 dark:text-slate-300">
-                  To think confidently, act confidently.
-                </span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Audio Section */}
-          <div>
-            <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-3">Audio: Manny and Candace Winston</h3>
-            <ul className="space-y-2 ml-6">
-              <li className="flex gap-3">
-                <span className="text-indigo-600 font-bold flex-shrink-0">-</span>
-                <span className="text-slate-700 dark:text-slate-300">
-                  Stop waiting for the "perfect" moment or a burst of inspiration to get started.
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-indigo-600 font-bold flex-shrink-0">-</span>
-                <span className="text-slate-700 dark:text-slate-300">
-                  Motivation typically comes after you start doing the work, not before.
-                </span>
-              </li>
-            </ul>
-          </div>
+          <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-4">{postData.day}</h2>
+          {postData.sections.map((section, idx) => (
+            <div key={idx} className={idx < postData.sections.length - 1 ? "mb-5" : ""}>
+              <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100 mb-2">{section.title}</h3>
+              <ul className="space-y-1.5 ml-5 mb-2">
+                {section.items.map((item, i) => (
+                  <li key={i} className="flex gap-3">
+                    <span className="text-indigo-600 font-bold flex-shrink-0">-</span>
+                    <span className="text-slate-700 dark:text-slate-300">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
       </div>

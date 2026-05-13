@@ -253,9 +253,9 @@ export default function IncomePage() {
             { label: "Est. Monthly Income", value: `$${totalIncome.toFixed(2)}`, color: "text-emerald-600" },
             { label: "Verified Customer Sales", value: "60%", color: "text-orange-500" },
           ].map(({ label, value, color }) => (
-            <div key={label} className="bg-white dark:bg-slate-800 rounded-2xl shadow-md p-5 border border-slate-100 dark:border-slate-700">
+            <div key={label} className="bg-white dark:bg-slate-800 rounded-2xl shadow-md p-4 sm:p-5 border border-slate-100 dark:border-slate-700">
               <p className="text-xs text-slate-500 font-medium uppercase tracking-wide">{label}</p>
-              <p className={`text-3xl font-black mt-2 ${color}`}>{value}</p>
+              <p className={`text-xl sm:text-2xl md:text-3xl font-black mt-2 break-words ${color}`}>{value}</p>
             </div>
           ))}
         </div>
