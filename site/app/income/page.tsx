@@ -126,6 +126,12 @@ const DEPTH_COLORS = [
 ];
 
 function NodeCard({ node, rootPct, depth, onPVChange, onAddLeg, onDeleteLeg }: CardProps) {
+  const [inputValue, setInputValue] = React.useState<string>(String(node.pv));
+
+  React.useEffect(() => {
+    setInputValue(String(node.pv));
+  }, [node.pv]);
+
   const groupPV = calculateGroupPV(node);
   const bonusPct = getBonusPercent(groupPV);
   const estimatedIncome = calculateIncome(node);
@@ -161,10 +167,26 @@ function NodeCard({ node, rootPct, depth, onPVChange, onAddLeg, onDeleteLeg }: C
           Personal PV
         </label>
         <input
-          type="number"
-          value={node.pv}
-          min={0}
-          onChange={(e) => onPVChange(node.id, Math.max(0, Number(e.target.value)))}
+          type="text"
+          inputMode="numeric"
+          pattern="[0-9]*"
+          value={inputValue}
+          onChange={(e) => {
+            const val = e.target.value;
+            if (val === '' || /^\d+$/.test(val)) {
+              setInputValue(val);
+              if (val !== '') {
+                onPVChange(node.id, Math.max(0, Number(val)));
+              }
+            }
+          }}
+          onFocus={(e) => e.target.select()}
+          onBlur={() => {
+            if (inputValue === '') {
+              onPVChange(node.id, 0);
+              setInputValue('0');
+            }
+          }}
           className="w-full mt-1 border border-slate-300 dark:border-slate-600 rounded-xl px-3 py-2 text-base font-semibold bg-white dark:bg-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-400"
         />
       </div>
