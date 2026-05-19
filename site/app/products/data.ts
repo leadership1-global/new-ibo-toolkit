@@ -2243,7 +2243,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "123792V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Skin Nutrition Balancing Jelly Cleanser",
     "details": "Oil-control jelly cleanser, Shiso Perilla + Aloe, soap-free.",
     "tags": "Skin Care",
@@ -2259,7 +2259,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "123794V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Skin Nutrition Balancing Fresh Shake Toner",
     "details": "Pore-minimizing botanical toner, oil-absorbing powders.",
     "tags": "Skin Care",
@@ -2275,7 +2275,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "123797V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Skin Nutrition Balancing Matte Gel Lotion",
     "details": "Lightweight matte moisturizer, 24-hour hydration.",
     "tags": "Skin Care",
@@ -2291,7 +2291,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "123799V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Skin Nutrition Balancing Matte Day Lotion SPF 30",
     "details": "Daily sun protection, oil-control, lightweight.",
     "tags": "Skin Care",
@@ -2307,7 +2307,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "123793V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Skin Nutrition Hydrating Mousse Cleanser",
     "details": "Creamy soap-free cleanser, Amino Acids + Patented Shiso Perilla.",
     "tags": "Skin Care",
@@ -2323,7 +2323,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "123795V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Skin Nutrition Hydrating Smoothing Toner",
     "details": "Alcohol-free hydrating toner, Pro-Vitamin B5.",
     "tags": "Skin Care",
@@ -2339,7 +2339,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "123796V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Skin Nutrition Hydrating Eye Gel Cream",
     "details": "Dark circles, puffiness reduction, 24-hour hydration.",
     "tags": "Skin Care",
@@ -2355,7 +2355,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "123798V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Skin Nutrition Hydrating Gel Cream",
     "details": "Deeply hydrating 72-hour moisture, hyaluronic acid.",
     "tags": "Skin Care",
@@ -2371,7 +2371,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "123800V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Skin Nutrition Hydrating Day Lotion SPF 30",
     "details": "Daily hydrating SPF 30, dewy finish, dry skin.",
     "tags": "Skin Care",
@@ -2387,7 +2387,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "123781V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Skin Nutrition Renewing Foaming Cleanser",
     "details": "Anti-aging foaming cleanser, mature skin.",
     "tags": "Skin Care",
@@ -2403,7 +2403,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "123783V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Skin Nutrition Renewing Softening Toner",
     "details": "Mature skin anti-aging toner, softening botanicals.",
     "tags": "Skin Care",
@@ -2419,7 +2419,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "123784V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Skin Nutrition Renewing Reactivation Eye Cream",
     "details": "Crows feet, eye renewal, dark circles + firming.",
     "tags": "Skin Care",
@@ -2435,7 +2435,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "123785V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Skin Nutrition Renewing Reactivation Cream",
     "details": "Wrinkle reduction Peptide-rich cream, retinol alternative.",
     "tags": "Skin Care",
@@ -2451,7 +2451,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "123857V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Skin Nutrition Renewing Reactivation Day Lotion SPF 30",
     "details": "Daily anti-aging SPF 30 + renewal actives.",
     "tags": "Skin Care",
@@ -2467,7 +2467,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "123787V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Skin Nutrition Renewing Reactivation Day Cream SPF 30",
     "details": "Rich anti-aging day cream with SPF 30, designed for mature and drier skin types.",
     "tags": "Skin Care, SPF 30, Anti-Aging",
@@ -2483,7 +2483,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "123786V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Skin Nutrition Firming Ultra Lifting Cream",
     "details": "Skin firming, Peptide + bakuchiol lifting cream.",
     "tags": "Skin Care",
@@ -2499,7 +2499,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "125517V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Skin Nutrition Vitamin C + HA3 Daily Serum",
     "details": "Brightening, Vitamin C + triple HA, daily serum.",
     "tags": "Skin Care",
@@ -2515,7 +2515,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "125575V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Skin Nutrition Sleeping Mask",
     "details": "Overnight renewal mask, adenosine + niacinamide.",
     "tags": "Skin Care",
@@ -2531,7 +2531,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124823V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Skin Nutrition Multi-Defense UV Protect SPF 50+",
     "details": "Premium sun SPF 50+ broad-spectrum + blue light + IR.",
     "tags": "Skin Care",
@@ -2547,7 +2547,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127019V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Skin Nutrition Defying Serum",
     "details": "Advanced anti-aging serum targeting wrinkles and sagging with peptides and retinol alternatives.",
     "tags": "Skin Care, Anti-Aging, Peptides",
@@ -2563,7 +2563,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127020V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Skin Nutrition Correcting Serum",
     "details": "Targeted serum for dark spots and hyperpigmentation with tranexamic acid and niacinamide.",
     "tags": "Skin Care, Brightening",
@@ -2579,7 +2579,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "122339V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Signature Select Polishing Mask",
     "details": "Gentle exfoliating mask with enzymatic and physical exfoliants to reveal smoother skin.",
     "tags": "Skin Care, Exfoliating",
@@ -2595,7 +2595,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "122340V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Signature Select Brightening Mask",
     "details": "Treatment mask with Vitamin C and botanicals for an immediate luminosity boost.",
     "tags": "Skin Care, Brightening",
@@ -2611,7 +2611,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "122341V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Signature Select Firming Mask",
     "details": "Lifting and firming gel mask with pomegranate to tighten and revitalize skin.",
     "tags": "Skin Care, Firming",
@@ -2627,7 +2627,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "122342V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Signature Select Purifying Mask",
     "details": "Deep-cleansing clay mask with kaolin and bentonite to clarify pores.",
     "tags": "Skin Care, Purifying",
@@ -2643,7 +2643,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "122343V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Signature Select Hydrating Mask",
     "details": "Intensive treatment mask with hyaluronic acid for deep, lasting moisture.",
     "tags": "Skin Care, Hydrating",
@@ -2659,7 +2659,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126219V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Labs Illuminating System",
     "details": "Advanced device + serum system targeting dark spots with enhanced penetration technology.",
     "tags": "Skin Care, Device",
@@ -2675,7 +2675,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126807V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Labs Retexturizing System",
     "details": "Professional resurfacing system with aquabrasion device and serums to smooth texture.",
     "tags": "Skin Care, Resurfacing",
@@ -2691,7 +2691,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "125547V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Labs Retexturizing System Refill",
     "details": "Replacement cartridges and serum for the Artistry Labs resurfacing device.",
     "tags": "Skin Care, Refill",
@@ -2707,7 +2707,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "128178V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Labs Retexturizing Serum",
     "details": "Standalone serum with AHAs and peptides for daily chemical exfoliation.",
     "tags": "Skin Care, Exfoliating",
@@ -2723,7 +2723,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "109709V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Intensive Skincare Anti-Wrinkle Firming Serum",
     "details": "High-performance serum with plant stem cells and peptides for deep wrinkles.",
     "tags": "Skin Care, Anti-Aging",
@@ -2739,7 +2739,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "123776V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Intensive Skincare 14 Night Reset Program",
     "details": "14-night intensive treatment ampoules for a rapid total skin transformation.",
     "tags": "Skin Care, Reset",
@@ -2755,7 +2755,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "118184V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Supreme LX Regenerating Cream",
     "details": "Ultra-luxurious anti-aging face cream with rare botanicals and 24K gold.",
     "tags": "Skin Care, Luxury",
@@ -2771,7 +2771,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "111225V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Men Gentle Face Wash",
     "details": "Gentle cleanser for men's skin that removes oil and dirt without stripping.",
     "tags": "Skin Care, Men's Care",
@@ -2787,7 +2787,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "111227V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Men Post Shave Toner",
     "details": "Alcohol-free toner to calm razor irritation and refresh skin after shaving.",
     "tags": "Skin Care, Men's Care",
@@ -2803,7 +2803,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "111228V",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Men Facial Moisturizer",
     "details": "Lightweight, non-greasy moisturizer for hydration and shine control.",
     "tags": "Skin Care, Men's Care",
@@ -2819,7 +2819,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124811",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Studio Clean Start Micellar Makeup Remover Wipes",
     "details": "Gentle micellar wipes that remove waterproof makeup without irritation.",
     "tags": "Skin Care, Makeup Remover",
@@ -2835,7 +2835,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124812",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Studio Glow Boss Cleanser + Exfoliator",
     "details": "cleansing and exfoliating your skin on the daily.",
     "tags": "Skin Care, Cleanser, Exfoliator",
@@ -2851,7 +2851,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124813",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Studio Ros All Day Anti-Acne Toner + Pore Refresher 1% Salicylic Acid Treatment",
     "details": "Refreshing rose water toner and makeup setting spray for a subtle glow.",
     "tags": "Toner, Setting Spray",
@@ -2867,7 +2867,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "125966",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Studio My Main Squeeze Moisturizer",
     "details": "Lightweight daily moisturizer with hyaluronic acid for fast-absorbing hydration.",
     "tags": "Moisturizer, Hyaluronic Acid",
@@ -2883,7 +2883,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "125327",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Studio Done With Zit!",
     "details": "Targeted acne spot treatment with salicylic acid and tea tree oil for fast healing.",
     "tags": "Acne, Spot Treatment",
@@ -2899,7 +2899,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124816",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Studio Spot On Dots",
     "details": "Hydrocolloid acne patches that absorb impurities and protect blemishes overnight.",
     "tags": "Acne Patch, Hydrocolloid",
@@ -2915,7 +2915,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124819",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Studio The Pampered Pout Lip Mask",
     "details": "Intensive overnight lip mask with shea butter and honey to repair dry lips.",
     "tags": "Lip Treatment, Overnight",
@@ -2931,7 +2931,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "125964",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Studio Eye Look Energized",
     "details": "Caffeine-infused eye gel to reduce puffiness and dark circles instantly.",
     "tags": "Eye Care, Caffeine",
@@ -2947,7 +2947,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124818",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Studio Eye Look Rested",
     "details": "Soothing eye cream for tired, sensitive eyes with hydrating botanicals.",
     "tags": "Eye Cream, Soothing",
@@ -2963,7 +2963,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "321550",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Everyday Skin Solution",
     "details": "Help hydrate, reduce the appearance of visible signs of aging and provide antioxidant protection with vitamin C and other key natural ingredients found in Artistry Skin Nutrition products. Plus Nutrilite Double X Multivitamin to ensure youre getting supportive nutrients - like vitamins A and C, biotin and niacin - that can help support skin health from the inside.",
     "tags": "Skin Care, Holistic Bundle",
@@ -2979,7 +2979,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127449",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect Longwearing Foundation -  Shell 101.",
     "details": "This lightweight, longwearing foundation hydrates, protects and perfects for your best, healthiest-looking skin. Enjoy 24 hours of beautiful coverage with a smooth, soft matte finish that stays in place.",
     "tags": "Makeup, Foundation, Longwear",
@@ -2995,7 +2995,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127450",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect Longwearing Foundation -  Cashmere 102.",
     "details": "This lightweight, longwearing foundation hydrates, protects and perfects for your best, healthiest-looking skin. Enjoy 24 hours of beautiful coverage with a smooth, soft matte finish that stays in place.",
     "tags": "Makeup, Foundation, Longwear",
@@ -3011,7 +3011,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127451",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect Longwearing Foundation -  Ivory 103.",
     "details": "This lightweight, longwearing foundation hydrates, protects and perfects for your best, healthiest-looking skin. Enjoy 24 hours of beautiful coverage with a smooth, soft matte finish that stays in place.",
     "tags": "Makeup, Foundation, Longwear",
@@ -3027,7 +3027,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127452",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect Longwearing Foundation -  Fawn 104.",
     "details": "This lightweight, longwearing foundation hydrates, protects and perfects for your best, healthiest-looking skin. Enjoy 24 hours of beautiful coverage with a smooth, soft matte finish that stays in place.",
     "tags": "Makeup, Foundation, Longwear",
@@ -3043,7 +3043,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127453",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect Longwearing Foundation -  Beige 201.",
     "details": "This lightweight, longwearing foundation hydrates, protects and perfects for your best, healthiest-looking skin. Enjoy 24 hours of beautiful coverage with a smooth, soft matte finish that stays in place.",
     "tags": "Makeup, Foundation, Longwear",
@@ -3059,7 +3059,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127454",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect Longwearing Foundation -  Bamboo 202.",
     "details": "This lightweight, longwearing foundation hydrates, protects and perfects for your best, healthiest-looking skin. Enjoy 24 hours of beautiful coverage with a smooth, soft matte finish that stays in place.",
     "tags": "Makeup, Foundation, Longwear",
@@ -3075,7 +3075,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127455",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect Longwearing Foundation -  Honey 203.",
     "details": "This lightweight, longwearing foundation hydrates, protects and perfects for your best, healthiest-looking skin. Enjoy 24 hours of beautiful coverage with a smooth, soft matte finish that stays in place.",
     "tags": "Makeup, Foundation, Longwear",
@@ -3091,7 +3091,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127456",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect Longwearing Foundation -  Oat 204.",
     "details": "This lightweight, longwearing foundation hydrates, protects and perfects for your best, healthiest-looking skin. Enjoy 24 hours of beautiful coverage with a smooth, soft matte finish that stays in place.",
     "tags": "Makeup, Foundation, Longwear",
@@ -3107,7 +3107,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127457",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect Longwearing Foundation -  Biscotti 301.",
     "details": "This lightweight, longwearing foundation hydrates, protects and perfects for your best, healthiest-looking skin. Enjoy 24 hours of beautiful coverage with a smooth, soft matte finish that stays in place.",
     "tags": "Makeup, Foundation, Longwear",
@@ -3123,7 +3123,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127458",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect Longwearing Foundation -  Almond 302.",
     "details": "This lightweight, longwearing foundation hydrates, protects and perfects for your best, healthiest-looking skin. Enjoy 24 hours of beautiful coverage with a smooth, soft matte finish that stays in place.",
     "tags": "Makeup, Foundation, Longwear",
@@ -3139,7 +3139,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127459",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect Longwearing Foundation -  Chestnut 303.",
     "details": "This lightweight, longwearing foundation hydrates, protects and perfects for your best, healthiest-looking skin. Enjoy 24 hours of beautiful coverage with a smooth, soft matte finish that stays in place.",
     "tags": "Makeup, Foundation, Longwear",
@@ -3155,7 +3155,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127460",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect Longwearing Foundation -  Amber 304.",
     "details": "This lightweight, longwearing foundation hydrates, protects and perfects for your best, healthiest-looking skin. Enjoy 24 hours of beautiful coverage with a smooth, soft matte finish that stays in place.",
     "tags": "Makeup, Foundation, Longwear",
@@ -3171,7 +3171,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127461",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect Longwearing Foundation -  Cocoa 305",
     "details": "Shade: Cocoa 305 (deep, neutral). 24-hour longwear liquid foundation.",
     "tags": "Makeup, Foundation, Longwear",
@@ -3187,7 +3187,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127462",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect Longwearing Foundation -  Mocha 401",
     "details": "Shade: Mocha 401 (very deep, neutral-warm). 24-hour longwear foundation.",
     "tags": "Makeup, Foundation, Longwear",
@@ -3203,7 +3203,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127463",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect Longwearing Foundation -  Nutmeg 402",
     "details": "Shade: Nutmeg 402 (very deep, warm). 24-hour longwear foundation.",
     "tags": "Makeup, Foundation, Longwear",
@@ -3219,7 +3219,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127464",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect Longwearing Foundation -  Java 403",
     "details": "Shade: Java 403 (very deep, cool-neutral). 24-hour longwear foundation.",
     "tags": "Makeup, Foundation, Longwear",
@@ -3235,7 +3235,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127465",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect Longwearing Foundation -  Espresso 404",
     "details": "Shade: Espresso 404 (deepest, cool). 24-hour longwear foundation.",
     "tags": "Makeup, Foundation, Longwear",
@@ -3251,7 +3251,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126718",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Serum Foundation - Shell 101",
     "details": "Serum-foundation hybrid with hyaluronic acid and peptides for luminous coverage.",
     "tags": "Makeup, Serum Foundation",
@@ -3267,7 +3267,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126719",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Serum Foundation - Cashmere 102",
     "details": "Serum-foundation hybrid for buildable, luminous coverage. Shade: Cashmere 102.",
     "tags": "Makeup, Serum Foundation",
@@ -3283,7 +3283,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126720",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Serum Foundation - Ivory 103",
     "details": "Serum-foundation hybrid for buildable, luminous coverage. Shade: Ivory 103.",
     "tags": "Makeup, Serum Foundation",
@@ -3299,7 +3299,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126721",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Serum Foundation - Fawn 104",
     "details": "Serum-foundation hybrid for buildable, luminous coverage. Shade: Fawn 104.",
     "tags": "Makeup, Serum Foundation",
@@ -3315,7 +3315,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126722",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Serum Foundation - Beige 201",
     "details": "Serum-foundation hybrid for buildable, luminous coverage. Shade: Beige 201.",
     "tags": "Makeup, Serum Foundation",
@@ -3331,7 +3331,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126723",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Serum Foundation - Bamboo 202",
     "details": "Serum-foundation hybrid for buildable, luminous coverage. Shade: Bamboo 202.",
     "tags": "Makeup, Serum Foundation",
@@ -3347,7 +3347,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126724",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Serum Foundation - Honey 203",
     "details": "Serum-foundation hybrid for buildable, luminous coverage. Shade: Honey 203.",
     "tags": "Makeup, Serum Foundation",
@@ -3363,7 +3363,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126725",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Serum Foundation - Oat 204",
     "details": "Serum-foundation hybrid for buildable, luminous coverage. Shade: Oat 204.",
     "tags": "Makeup, Serum Foundation",
@@ -3379,7 +3379,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126726",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Serum Foundation - Biscotti 301",
     "details": "Serum-foundation hybrid for buildable, luminous coverage. Shade: Biscotti 301.",
     "tags": "Makeup, Serum Foundation",
@@ -3395,7 +3395,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126727",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Serum Foundation - Almond 302",
     "details": "Serum-foundation hybrid for buildable, luminous coverage. Shade: Almond 302.",
     "tags": "Makeup, Serum Foundation",
@@ -3411,7 +3411,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126728",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Serum Foundation - Chestnut 303",
     "details": "Serum-foundation hybrid for buildable, luminous coverage. Shade: Chestnut 303.",
     "tags": "Makeup, Serum Foundation",
@@ -3427,7 +3427,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126729",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Serum Foundation - Amber 304",
     "details": "Serum-foundation hybrid for buildable, luminous coverage. Shade: Amber 304.",
     "tags": "Makeup, Serum Foundation",
@@ -3443,7 +3443,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126730",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Serum Foundation - Cocoa 305",
     "details": "Serum-foundation hybrid for buildable, luminous coverage. Shade: Cocoa 305.",
     "tags": "Makeup, Serum Foundation",
@@ -3459,7 +3459,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126731",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Serum Foundation - Mocha 401",
     "details": "Serum-foundation hybrid for buildable, luminous coverage. Shade: Mocha 401.",
     "tags": "Makeup, Serum Foundation",
@@ -3475,7 +3475,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126732",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Serum Foundation - Nutmeg 402",
     "details": "Serum-foundation hybrid for buildable, luminous coverage. Shade: Nutmeg 402.",
     "tags": "Makeup, Serum Foundation",
@@ -3491,7 +3491,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126733",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Serum Foundation - Java 403",
     "details": "Serum-foundation hybrid with hyaluronic acid and peptides for luminous coverage.",
     "tags": "Makeup, Serum Foundation",
@@ -3507,7 +3507,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126734",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Serum Foundation - Espresso 404",
     "details": "Serum-foundation hybrid with hyaluronic acid and peptides. Shade: Espresso 404.",
     "tags": "Makeup, Serum Foundation",
@@ -3523,7 +3523,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127844",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect  Powder Foundation Compact",
     "details": "Empty refillable compact case for Ever Perfect Powder Foundation.",
     "tags": "Makeup, Compact, Sustainable",
@@ -3539,7 +3539,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127832",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect  Powder Foundation - Shell 101",
     "details": "Lightweight powder foundation, medium coverage, matte-to-satin finish.",
     "tags": "Makeup, Powder Foundation",
@@ -3555,7 +3555,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127833",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect  Powder Foundation - Cashmere 102",
     "details": "Lightweight powder foundation, medium coverage. Shade: Cashmere 102.",
     "tags": "Makeup, Powder Foundation",
@@ -3571,7 +3571,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127834",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect  Powder Foundation - Ivory 103",
     "details": "Lightweight powder foundation, medium coverage. Shade: Ivory 103.",
     "tags": "Makeup, Powder Foundation",
@@ -3587,7 +3587,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127835",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect  Powder Foundation - Beige 201",
     "details": "Lightweight powder foundation, medium coverage. Shade: Beige 201.",
     "tags": "Makeup, Powder Foundation",
@@ -3603,7 +3603,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127836",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect  Powder Foundation - Bamboo 202",
     "details": "Lightweight powder foundation, medium coverage. Shade: Bamboo 202.",
     "tags": "Makeup, Powder Foundation",
@@ -3619,7 +3619,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127837",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect  Powder Foundation - Honey 203",
     "details": "Lightweight powder foundation, medium coverage. Shade: Honey 203.",
     "tags": "Makeup, Powder Foundation",
@@ -3635,7 +3635,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127838",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect  Powder Foundation - Biscotti 301",
     "details": "Lightweight powder foundation, medium coverage. Shade: Biscotti 301.",
     "tags": "Makeup, Powder Foundation",
@@ -3651,7 +3651,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127839",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect  Powder Foundation - Almond 302",
     "details": "Lightweight powder foundation, medium coverage. Shade: Almond 302.",
     "tags": "Makeup, Powder Foundation",
@@ -3667,7 +3667,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127840",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect  Powder Foundation - Chestnut 303",
     "details": "Lightweight powder foundation, medium coverage. Shade: Chestnut 303.",
     "tags": "Makeup, Powder Foundation",
@@ -3683,7 +3683,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127841",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect  Powder Foundation - Mocha 401",
     "details": "Lightweight powder foundation, medium coverage. Shade: Mocha 401.",
     "tags": "Makeup, Powder Foundation",
@@ -3699,7 +3699,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127842",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect  Powder Foundation - Nutmeg 402",
     "details": "Lightweight powder foundation, medium coverage. Shade: Nutmeg 402.",
     "tags": "Makeup, Powder Foundation",
@@ -3715,7 +3715,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127843",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect  Powder Foundation - Java 403",
     "details": "Lightweight powder foundation, medium coverage. Shade: Java 403.",
     "tags": "Makeup, Powder Foundation",
@@ -3731,7 +3731,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127825D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Serum Concealer - Fair.",
     "details": "Lightweight, long-lasting concealer blurs the appearance of skin imperfections, blemishes, pores and dark spots. 3-in-1 concealer can highlight, contour or conceal for a flawless finish.",
     "tags": "Makeup, Serum Concealer",
@@ -3747,7 +3747,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127826D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Serum Concealer - Light.",
     "details": "Lightweight, long-lasting concealer blurs the appearance of skin imperfections, blemishes, pores and dark spots. 3-in-1 concealer can highlight, contour or conceal for a flawless finish.",
     "tags": "Makeup, Serum Concealer",
@@ -3763,7 +3763,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127827D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Serum Concealer - Light Medium.",
     "details": "Lightweight, long-lasting concealer blurs the appearance of skin imperfections, blemishes, pores and dark spots. 3-in-1 concealer can highlight, contour or conceal for a flawless finish.",
     "tags": "Makeup, Serum Concealer",
@@ -3779,7 +3779,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127828D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Serum Concealer - Medium.",
     "details": "Lightweight, long-lasting concealer blurs the appearance of skin imperfections, blemishes, pores and dark spots. 3-in-1 concealer can highlight, contour or conceal for a flawless finish.",
     "tags": "Makeup, Serum Concealer",
@@ -3795,7 +3795,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127829D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Serum Concealer - Medium Deep.",
     "details": "Lightweight, long-lasting concealer blurs the appearance of skin imperfections, blemishes, pores and dark spots. 3-in-1 concealer can highlight, contour or conceal for a flawless finish.",
     "tags": "Makeup, Serum Concealer",
@@ -3811,7 +3811,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127830D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Serum Concealer - Deep",
     "details": "Serum-infused concealer providing skin-improving benefits while covering dark circles and imperfections. Shade: Deep.",
     "tags": "Makeup, Concealer, Serum",
@@ -3827,7 +3827,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127466D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect  Loose Setting Powder - Highlight",
     "details": "Finely milled loose setting powder that sets makeup while adding a luminous highlight effect. Highlight shade.",
     "tags": "Makeup, Setting Powder, Highlighter",
@@ -3843,7 +3843,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127467D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect  Loose Setting Powder - Light to Medium",
     "details": "Finely milled loose setting powder that sets makeup for all-day wear. Light to Medium shade.",
     "tags": "Makeup, Setting Powder, Longwear",
@@ -3859,7 +3859,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127468D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Ever Perfect  Loose Setting Powder - Medium to Deep",
     "details": "Finely milled loose setting powder that sets makeup for all-day wear. Medium to Deep shade.",
     "tags": "Makeup, Setting Powder, Longwear",
@@ -3875,7 +3875,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126735D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Pressed Powder",
     "details": "Radiance-boosting pressed powder that blurs imperfections and sets makeup with a luminous finish.",
     "tags": "Makeup, Pressed Powder, Glow",
@@ -3891,7 +3891,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127472D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Cream & Powder Blush - Peachy Days",
     "details": "Dual-phase blush with a cream-to-powder formula for buildable, long-lasting color. Peachy Days.",
     "tags": "Makeup, Blush, Longwear",
@@ -3907,7 +3907,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127473D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Cream & Powder Blush - Pink Spring Fling",
     "details": "Dual-phase cream-powder blush in a fresh pink shade.",
     "tags": "Makeup, Blush, Longwear",
@@ -3923,7 +3923,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127474D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Cream & Powder Blush - Mauvy Night",
     "details": "Dual-phase cream-powder blush in a cool mauve shade.",
     "tags": "Makeup, Blush, Longwear",
@@ -3939,7 +3939,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127475D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Cream & Powder Blush - Summer Sunset",
     "details": "Dual-phase cream-powder blush in a warm coral-orange shade.",
     "tags": "Makeup, Blush, Longwear",
@@ -3955,7 +3955,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126736",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Eyeshadow Quad - Golden Harvest",
     "details": "Highly pigmented eyeshadow palette in warm gold-bronze tones. Matte and shimmer shades.",
     "tags": "Makeup, Eyeshadow, Palette",
@@ -3971,7 +3971,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126737",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Eyeshadow Quad - Peach Basket",
     "details": "Eyeshadow palette in warm peach-nude tones with matte and shimmer finishes.",
     "tags": "Makeup, Eyeshadow, Palette",
@@ -3987,7 +3987,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126738",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Eyeshadow Quad - Berry Garden",
     "details": "Eyeshadow palette in berry-plum tones for a dramatic eye look.",
     "tags": "Makeup, Eyeshadow, Palette",
@@ -4003,7 +4003,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126739",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Eyeshadow Quad - Stunning Skies",
     "details": "Eyeshadow palette in cool blue-navy tones for a bold eye look.",
     "tags": "Makeup, Eyeshadow, Palette",
@@ -4019,7 +4019,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126745D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Waterproof Brow Pencil and Tinted Gel - True Black.",
     "details": "Two-in-one defines, colors and contours brows, then sets them with a natural-looking, all-day hold (10 hours)",
     "tags": "Makeup, Brow, Waterproof",
@@ -4035,7 +4035,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126746D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Waterproof Brow Pencil and Tinted Gel - Taupe.",
     "details": "Two-in-one defines, colors and contours brows, then sets them with a natural-looking, all-day hold (10 hours)",
     "tags": "Makeup, Brow, Waterproof",
@@ -4051,7 +4051,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126747D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Waterproof Brow Pencil and Tinted Gel - Dark Brown.",
     "details": "Two-in-one defines, colors and contours brows, then sets them with a natural-looking, all-day hold (10 hours)",
     "tags": "Makeup, Brow, Waterproof",
@@ -4067,7 +4067,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "123038D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Studio Mascara Base Primer",
     "details": "Lash-conditioning primer that extends and volumizes lashes before mascara.",
     "tags": "Makeup, Mascara Primer",
@@ -4083,7 +4083,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126741D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Waterproof Pencil Eyeliner - Natural Brown",
     "details": "Waterproof pencil eyeliner delivering precise, smudge-proof lines. Natural Brown.",
     "tags": "Makeup, Eyeliner, Waterproof",
@@ -4099,7 +4099,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126744D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Waterproof Pencil Eyeliner - Natural Black",
     "details": "Waterproof pencil eyeliner in a classic Natural Black shade.",
     "tags": "Makeup, Eyeliner, Waterproof",
@@ -4115,7 +4115,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126743D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Longwearing Liquid Eyeliner",
     "details": "High-precision liquid eyeliner with a micro-fine tip for sharp, waterproof lines.",
     "tags": "Makeup, Eyeliner, Liquid",
@@ -4131,7 +4131,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126740D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Waterproof Length Serum Mascara",
     "details": "Lengthening mascara with lash-serum conditioning, waterproof formula.",
     "tags": "Makeup, Mascara, Waterproof",
@@ -4147,7 +4147,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127845D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant 3-in-1 Volume Mascara",
     "details": "Volumizing mascara delivering volume, length, and curl in one buildable formula.",
     "tags": "Makeup, Mascara, Volume",
@@ -4163,7 +4163,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124144D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Cream Lipstick - Saturday Peach 101",
     "details": "Creamy, moisturizing lipstick with rich pigment and a satin finish.",
     "tags": "Makeup, Lipstick, Cream",
@@ -4179,7 +4179,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124145D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Cream Lipstick - Weekend Ros 102",
     "details": "Creamy, moisturizing lipstick with rich pigment and a satin finish.",
     "tags": "Makeup, Lipstick, Cream",
@@ -4195,7 +4195,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124146D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Cream Lipstick - Mauvelous Morning 103",
     "details": "Creamy, moisturizing lipstick with rich pigment and a satin finish.",
     "tags": "Makeup, Lipstick, Cream",
@@ -4211,7 +4211,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124147D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Cream Lipstick - Berry Special Evening 104",
     "details": "Creamy, moisturizing lipstick with rich pigment and a satin finish.",
     "tags": "Makeup, Lipstick, Cream",
@@ -4227,7 +4227,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124149D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Cream Lipstick - Secret Crush Scarlet 106",
     "details": "Creamy, moisturizing lipstick with rich pigment and a satin finish.",
     "tags": "Makeup, Lipstick, Cream",
@@ -4243,7 +4243,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124150D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Cream Lipstick - Take Charge Red 107",
     "details": "Creamy, moisturizing lipstick with rich pigment and a satin finish.",
     "tags": "Makeup, Lipstick, Cream",
@@ -4259,7 +4259,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124151D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Cream Lipstick - Text Me Terracotta 108",
     "details": "Creamy, moisturizing lipstick with rich pigment and a satin finish.",
     "tags": "Makeup, Lipstick, Cream",
@@ -4275,7 +4275,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124152D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Cream Lipstick - Spice Meets Nice 109",
     "details": "Creamy, moisturizing lipstick with rich pigment and a satin finish.",
     "tags": "Makeup, Lipstick, Cream",
@@ -4291,7 +4291,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124153D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Cream Lipstick - Crush on Coral 110",
     "details": "Creamy, moisturizing lipstick with rich pigment and a satin finish.",
     "tags": "Makeup, Lipstick, Cream",
@@ -4307,7 +4307,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124154D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Cream Lipstick - Go-Go Cocoa 111",
     "details": "Creamy, moisturizing lipstick with rich pigment and a satin finish.",
     "tags": "Makeup, Lipstick, Cream",
@@ -4323,7 +4323,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124155D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Matte Lipstick - Lunch Date Pink 201",
     "details": "Creamy, moisturizing lipstick with rich pigment and a satin finish.",
     "tags": "Makeup, Lipstick, Cream",
@@ -4339,7 +4339,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124156D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Matte Lipstick - Photobomb Fuschia 202",
     "details": "Creamy, moisturizing lipstick with rich pigment and a satin finish.",
     "tags": "Makeup, Lipstick, Cream",
@@ -4355,7 +4355,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124157D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Matte Lipstick - Recharge Rose 203",
     "details": "Creamy, moisturizing lipstick with rich pigment and a satin finish.",
     "tags": "Makeup, Lipstick, Cream",
@@ -4371,7 +4371,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124158D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Matte Lipstick - Road Trip Red 204",
     "details": "Creamy, moisturizing lipstick with rich pigment and a satin finish.",
     "tags": "Makeup, Lipstick, Cream",
@@ -4387,7 +4387,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124159D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Matte Lipstick - Firecracker Red 205",
     "details": "Creamy, moisturizing lipstick with rich pigment and a satin finish.",
     "tags": "Makeup, Lipstick, Cream",
@@ -4403,7 +4403,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124161D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Matte Lipstick - Blush Crush 207",
     "details": "Creamy, moisturizing lipstick with rich pigment and a satin finish.",
     "tags": "Makeup, Lipstick, Cream",
@@ -4419,7 +4419,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124162D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Matte Lipstick - Lazy Day Latte 208",
     "details": "Creamy, moisturizing lipstick with rich pigment and a satin finish.",
     "tags": "Makeup, Lipstick, Cream",
@@ -4435,7 +4435,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124163D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Matte Lipstick - Love Note Nude 209",
     "details": "Creamy, moisturizing lipstick with rich pigment and a satin finish.",
     "tags": "Makeup, Lipstick, Cream",
@@ -4451,7 +4451,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127476D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Light Up Liquid Lip Matte - Mocha Crush 201",
     "details": "Lightweight, transfer-resistant liquid matte lip color",
     "tags": "Makeup, Liquid Lip, Matte",
@@ -4467,7 +4467,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127477D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Light Up Liquid Lip Matte - Dragon Fruit De-light 202",
     "details": "Lightweight, transfer-resistant liquid matte lip color",
     "tags": "Makeup, Lip Gloss, Glow",
@@ -4483,7 +4483,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127478D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Light Up Liquid Lip Matte - Pepper Pout 203",
     "details": "Lightweight, transfer-resistant liquid matte lip color",
     "tags": "Makeup, Lip Gloss, Glow",
@@ -4499,7 +4499,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127479D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Light Up Liquid Lip Matte - Midnight Orchid 204",
     "details": "Lightweight, transfer-resistant liquid matte lip color",
     "tags": "Makeup, Lip Gloss, Glow",
@@ -4515,7 +4515,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127584D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Light Up Liquid Lip Matte - Blushing Merlot 206",
     "details": "Lightweight, transfer-resistant liquid matte lip color",
     "tags": "Makeup, Lip Gloss, Glow",
@@ -4531,7 +4531,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127481D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Light Up Liquid Lip Glow - Desert Rose 102",
     "details": "Lightweight, transfer-resistant liquid matte lip color",
     "tags": "Makeup, Lip Gloss, Glow",
@@ -4547,7 +4547,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127482D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Light Up Liquid Lip Glow - Kiss Me Cranberry 103",
     "details": "Lightweight, transfer-resistant liquid matte lip color",
     "tags": "Makeup, Lip Gloss, Glow",
@@ -4563,7 +4563,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127483D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Light Up Liquid Lip Glow - Choco Bean 104",
     "details": "Lightweight, transfer-resistant liquid matte lip color",
     "tags": "Makeup, Lip Gloss, Glow",
@@ -4579,7 +4579,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127601D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Light Up Liquid Lip Glow - Fuchsia Bloom 105",
     "details": "Lightweight, transfer-resistant liquid matte lip color",
     "tags": "Makeup, Lip Gloss, Glow",
@@ -4595,7 +4595,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "127484D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Light Up Liquid Lip Plumper",
     "details": "Tingling volumizing lip plumper with ginger and capsicum for a glassy shine.",
     "tags": "Makeup, Lip Plumper",
@@ -4611,7 +4611,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "124674D",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Go Vibrant Sheer Lip Balm",
     "details": "Tinted lip balm providing moisture and a sheer wash of color.",
     "tags": "Makeup, Lip Balm, Tinted",
@@ -4627,7 +4627,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "110858",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Brush Set",
     "details": "Professional-quality 7-piece makeup brush set with soft synthetic bristles.",
     "tags": "Makeup, Brushes",
@@ -4643,7 +4643,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "319435",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Future Glow Foundation Brush",
     "details": "Flat-top kabuki brush designed for liquid and serum foundations.",
     "tags": "Makeup, Brush, Foundation",
@@ -4659,7 +4659,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "123791",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Skin Nutrition Micellar Makeup Remover + Cleanser",
     "details": "Dual-action no-rinse micellar water that removes waterproof makeup gently.",
     "tags": "Skin Care, Micellar",
@@ -4675,7 +4675,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "763778",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Makeup Perfecting Sponge",
     "details": "Teardrop-shaped blending sponge for seamless makeup application.",
     "tags": "Makeup, Sponge",
@@ -4691,7 +4691,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "119630",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Flora Chic Eau de Parfum Spray",
     "details": "Feminine floral Eau de Parfum with blooming florals and musk notes.",
     "tags": "Fragrance, Perfume",
@@ -4707,7 +4707,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "120549",
     "category": "Beauty",
-    "brand": "Artistry�",
+    "brand": "Artistry",
     "name": "Artistry Men Unknown Eau de Parfum Spray",
     "details": "Sophisticated masculine Eau de Parfum with woody and musky notes.",
     "tags": "Fragrance, Cologne",
@@ -4723,7 +4723,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126463",
     "category": "Personal Care",
-    "brand": "Satinique�",
+    "brand": "Satinique",
     "name": "Satinique Anti-Dandruff Scalp & Hair Shampoo 280 mL",
     "details": "Zinc pyrithione shampoo to eliminate flakes and soothe itchy scalp. 280 mL.",
     "tags": "Hair Care, Anti-Dandruff",
@@ -4739,7 +4739,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126464",
     "category": "Personal Care",
-    "brand": "Satinique�",
+    "brand": "Satinique",
     "name": "Satinique Anti-Dandruff Scalp & Hair Shampoo 750 mL",
     "details": "Zinc pyrithione shampoo to eliminate flakes. Economy 750 mL size.",
     "tags": "Hair Care, Anti-Dandruff",
@@ -4755,7 +4755,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126460",
     "category": "Personal Care",
-    "brand": "Satinique�",
+    "brand": "Satinique",
     "name": "Satinique Purifying Scalp & Hair Shampoo 280 mL",
     "details": "Deep-cleansing clarifying shampoo to remove oil and buildup. 280 mL.",
     "tags": "Hair Care, Purifying",
@@ -4771,7 +4771,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126461",
     "category": "Personal Care",
-    "brand": "Satinique�",
+    "brand": "Satinique",
     "name": "Satinique Purifying Scalp & Hair Shampoo 750 mL",
     "details": "Economy size deep-cleansing shampoo to remove oil and buildup.",
     "tags": "Hair Care, Purifying",
@@ -4787,7 +4787,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126462",
     "category": "Personal Care",
-    "brand": "Satinique�",
+    "brand": "Satinique",
     "name": "Satinique Purifying Scalp & Hair Conditioner 280 mL",
     "details": "Lightweight conditioner to hydrate purified hair without weighing it down.",
     "tags": "Hair Care, Conditioner",
@@ -4795,7 +4795,7 @@ export const PRODUCTS: Product[] = [
     "targetNeeds": "Light conditioning",
     "keyBenefits": "Lightweight, 280mL",
     "competingBrand": "Living Proof",
-    "competingProduct": "Perfect hair Day�Artistry Ever Perfect� Conditioner",
+    "competingProduct": "Perfect hair DayArtistry Ever Perfect Conditioner",
     "competingPrice": 32,
     "iboCost": 13.5,
     "pv": 3.94
@@ -4803,7 +4803,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126457",
     "category": "Personal Care",
-    "brand": "Satinique�",
+    "brand": "Satinique",
     "name": "Satinique Anti-Hair Fall Scalp & Hair Shampoo 280 mL",
     "details": "Strengthening shampoo with biotin and saw palmetto to reduce breakage.",
     "tags": "Hair Care, Hair Fall",
@@ -4819,7 +4819,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126458",
     "category": "Personal Care",
-    "brand": "Satinique�",
+    "brand": "Satinique",
     "name": "Satinique Anti-Hair Fall Scalp & Hair Shampoo 750 mL",
     "details": "Strengthening shampoo for hair fall. Economy 750mL size.",
     "tags": "Hair Care, Hair Fall",
@@ -4835,7 +4835,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126459",
     "category": "Personal Care",
-    "brand": "Satinique�",
+    "brand": "Satinique",
     "name": "Satinique Anti-Hair Fall Scalp & Hair Conditioner 280 mL",
     "details": "Strengthening conditioner for fragile hair with biotin and proteins.",
     "tags": "Hair Care, Conditioner",
@@ -4851,7 +4851,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126636",
     "category": "Personal Care",
-    "brand": "Satinique�",
+    "brand": "Satinique",
     "name": "Satinique Anti-Hair Fall Scalp & Hair Conditioner 750 mL",
     "details": "Strengthening conditioner for hair fall. Economy 750mL size.",
     "tags": "Hair Care, Conditioner",
@@ -4867,7 +4867,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126466",
     "category": "Personal Care",
-    "brand": "Satinique�",
+    "brand": "Satinique",
     "name": "Satinique Anti-Hair Fall Scalp Tonic",
     "details": "Leave-in treatment with biotin and niacinamide to support thicker hair.",
     "tags": "Hair Care, Scalp Treatment",
@@ -4883,7 +4883,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126455",
     "category": "Personal Care",
-    "brand": "Satinique�",
+    "brand": "Satinique",
     "name": "Satinique 2-in-1 Shampoo & Conditioner 280 mL",
     "details": "Convenient everyday cleanse and condition in one simple step.",
     "tags": "Hair Care, 2-in-1",
@@ -4899,7 +4899,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126456",
     "category": "Personal Care",
-    "brand": "Satinique�",
+    "brand": "Satinique",
     "name": "Satinique 2-in-1 Shampoo & Conditioner 750 mL",
     "details": "Everyday 2-in-1 shampoo and conditioner. Economy 750mL size.",
     "tags": "Hair Care, 2-in-1",
@@ -4915,7 +4915,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126449",
     "category": "Personal Care",
-    "brand": "Satinique�",
+    "brand": "Satinique",
     "name": "Satinique Smooth Moisture Shampoo 280 mL",
     "details": "Moisturizing shampoo with argan oil to tame frizz and add shine.",
     "tags": "Hair Care, Frizz Control",
@@ -4931,7 +4931,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126450",
     "category": "Personal Care",
-    "brand": "Satinique�",
+    "brand": "Satinique",
     "name": "Satinique Smooth Moisture Shampoo 750 mL",
     "details": "Moisturizing argan oil shampoo for frizz. Economy 750mL size.",
     "tags": "Hair Care, Frizz Control",
@@ -4947,7 +4947,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126451",
     "category": "Personal Care",
-    "brand": "Satinique�",
+    "brand": "Satinique",
     "name": "Satinique Smooth Moisture Conditioner 280 mL",
     "details": "Nourishing argan oil conditioner to detangle and smooth frizzy hair.",
     "tags": "Hair Care, Conditioner",
@@ -4963,7 +4963,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126634",
     "category": "Personal Care",
-    "brand": "Satinique�",
+    "brand": "Satinique",
     "name": "Satinique Smooth Moisture Conditioner 750 mL",
     "details": "Frizz-taming argan oil conditioner. Economy 750mL size.",
     "tags": "Hair Care, Conditioner",
@@ -4979,7 +4979,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126452",
     "category": "Personal Care",
-    "brand": "Satinique�",
+    "brand": "Satinique",
     "name": "Satinique Intensive Repair Shampoo 280 mL",
     "details": "Restorative keratin shampoo for damaged and color-treated hair.",
     "tags": "Hair Care, Repair",
@@ -4995,7 +4995,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126453",
     "category": "Personal Care",
-    "brand": "Satinique�",
+    "brand": "Satinique",
     "name": "Satinique Intensive Repair Shampoo 750 mL",
     "details": "Keratin repair shampoo for damaged hair. Economy 750mL size.",
     "tags": "Hair Care, Repair",
@@ -5011,7 +5011,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126454",
     "category": "Personal Care",
-    "brand": "Satinique�",
+    "brand": "Satinique",
     "name": "Satinique Intensive Repair Conditioner 280 mL",
     "details": "Keratin conditioner for deep repair of damaged or processed hair.",
     "tags": "Hair Care, Conditioner",
@@ -5027,7 +5027,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126635",
     "category": "Personal Care",
-    "brand": "Satinique�",
+    "brand": "Satinique",
     "name": "Satinique Intensive Repair Conditioner 750 mL",
     "details": "Keratin repair conditioner for damaged hair. Economy 750mL size.",
     "tags": "Hair Care, Conditioner",
@@ -5043,7 +5043,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126465",
     "category": "Personal Care",
-    "brand": "Satinique�",
+    "brand": "Satinique",
     "name": "Satinique Intensive Repair Hair Treatment",
     "details": "Deep-conditioning mask with proteins and ceramides for severely damaged hair.",
     "tags": "Hair Care, Mask",
@@ -5059,7 +5059,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126467",
     "category": "Personal Care",
-    "brand": "Satinique�",
+    "brand": "Satinique",
     "name": "Satinique Intensive Repair Hair Oil Serum",
     "details": "Argan oil serum for frizz control, shine, and damage protection.",
     "tags": "Hair Care, Oil Serum",
@@ -5075,7 +5075,7 @@ export const PRODUCTS: Product[] = [
   {
     "sku": "126468",
     "category": "Personal Care",
-    "brand": "Satinique�",
+    "brand": "Satinique",
     "name": "Satinique Intensive Repair Hair Lotion",
     "details": "Leave-in repair lotion for daily protection and split end reduction.",
     "tags": "Hair Care, Leave-In",

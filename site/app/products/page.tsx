@@ -78,13 +78,13 @@ export default function ProductsPage() {
           <h1 className="text-4xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-slate-100">
             Product Bundle Builder
           </h1>
-          <p className="text-slate-500 text-base mt-2 max-w-2xl">
+          <p className="text-slate-500 text-lg md:text-xl mt-2 max-w-2xl">
             Get a personalized product recommendation in two steps.
           </p>
         </div>
 
         {/* Step indicators */}
-        <div className="flex items-center gap-2 text-sm">
+        <div className="flex items-center gap-2 text-base">
           <StepIndicator
             number={1}
             label="Household"
@@ -110,7 +110,7 @@ export default function ProductsPage() {
         {/* Step 1: Household type */}
         {step === "household" && (
           <div className="space-y-4">
-            <h2 className="text-xl font-bold text-slate-800 dark:text-slate-200">
+            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 dark:text-slate-200">
               Who is this for?
             </h2>
             <div className="grid sm:grid-cols-2 gap-3">
@@ -121,7 +121,7 @@ export default function ProductsPage() {
                   onClick={() => selectHousehold(opt.id)}
                   className="rounded-2xl border border-slate-200 bg-white p-6 text-left transition-all hover:border-indigo-400 hover:shadow-md dark:border-slate-700 dark:bg-slate-800 dark:hover:border-indigo-500"
                 >
-                  <span className="text-lg font-bold text-slate-800 dark:text-slate-200">
+                  <span className="text-xl md:text-2xl font-bold text-slate-800 dark:text-slate-200">
                     {opt.label}
                   </span>
                 </button>
@@ -140,7 +140,7 @@ export default function ProductsPage() {
             >
               &larr; Back
             </button>
-            <h2 className="text-xl font-bold text-slate-800 dark:text-slate-200">
+            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 dark:text-slate-200">
               Choose your monthly PV target
             </h2>
             <div className="grid sm:grid-cols-3 gap-3">
@@ -154,7 +154,7 @@ export default function ProductsPage() {
                   <span className="text-3xl font-black text-slate-800 dark:text-slate-200">
                     {tier}
                   </span>
-                  <span className="block text-sm font-semibold text-slate-500 mt-1">
+                  <span className="block text-base font-semibold text-slate-500 mt-1">
                     PV
                   </span>
                 </button>
@@ -184,10 +184,10 @@ export default function ProductsPage() {
             </div>
 
             <div className="rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-700 dark:bg-slate-800">
-              <h2 className="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">
+              <h2 className="text-xl md:text-2xl font-bold text-slate-800 dark:text-slate-200 mb-1">
                 Your {pvTier} PV Bundle
               </h2>
-              <p className="text-sm text-slate-500">
+              <p className="text-base text-slate-500">
                 {HOUSEHOLD_OPTIONS.find((o) => o.id === household)?.label} &middot;{" "}
                 {bundleProducts.length} products
               </p>
@@ -196,26 +196,26 @@ export default function ProductsPage() {
             {/* Summary stats */}
             <div className="grid grid-cols-3 gap-2 sm:gap-3">
               <div className="rounded-xl bg-indigo-50 dark:bg-indigo-950/40 p-3 sm:p-4 text-center">
-                <p className="text-lg sm:text-2xl font-black text-indigo-700 dark:text-indigo-300">
+                <p className="text-lg sm:text-2xl md:text-3xl font-black text-indigo-700 dark:text-indigo-300">
                   {totals.totalPv.toFixed(1)}
                 </p>
-                <p className="text-xs text-indigo-600 dark:text-indigo-400 font-medium">
+                <p className="text-sm sm:text-base text-indigo-600 dark:text-indigo-400 font-medium">
                   Total PV
                 </p>
               </div>
               <div className="rounded-xl bg-emerald-50 dark:bg-emerald-950/40 p-3 sm:p-4 text-center">
-                <p className="text-lg sm:text-2xl font-black text-emerald-700 dark:text-emerald-300">
+                <p className="text-lg sm:text-2xl md:text-3xl font-black text-emerald-700 dark:text-emerald-300">
                   {formatCurrency(totals.totalIboCost)}
                 </p>
-                <p className="text-xs text-emerald-600 dark:text-emerald-400 font-medium">
+                <p className="text-sm sm:text-base text-emerald-600 dark:text-emerald-400 font-medium">
                   IBO Cost
                 </p>
               </div>
               <div className="rounded-xl bg-slate-100 dark:bg-slate-700 p-3 sm:p-4 text-center">
-                <p className="text-lg sm:text-2xl font-black text-slate-700 dark:text-slate-200">
+                <p className="text-lg sm:text-2xl md:text-3xl font-black text-slate-700 dark:text-slate-200">
                   {formatCurrency(totals.totalRetail)}
                 </p>
-                <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">
+                <p className="text-sm sm:text-base text-slate-500 dark:text-slate-400 font-medium">
                   Retail Price
                 </p>
               </div>
@@ -230,22 +230,22 @@ export default function ProductsPage() {
                 >
                   <div className="flex items-start justify-between gap-3">
                     <div className="min-w-0 flex-1">
-                      <span className="text-xs font-semibold uppercase tracking-wide text-slate-400">
+                      <span className="text-sm font-semibold uppercase tracking-wide text-slate-400">
                         {product.brand}
                       </span>
-                      <h3 className="text-sm font-bold text-slate-800 dark:text-slate-200 leading-tight mt-0.5">
+                      <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-800 dark:text-slate-200 leading-tight mt-0.5">
                         {product.name}
                       </h3>
-                      <p className="mt-1 text-xs text-slate-500 line-clamp-2">
+                      <p className="mt-1 text-sm text-slate-500 line-clamp-2">
                         {product.details}
                       </p>
                     </div>
                     <div className="flex-shrink-0 text-right">
-                      <p className="text-base font-black text-slate-800 dark:text-slate-200">
+                      <p className="text-lg md:text-xl font-black text-slate-800 dark:text-slate-200">
                         {formatCurrency(product.iboCost)}
                       </p>
-                      <p className="text-[10px] text-slate-400">IBO Cost</p>
-                      <p className="mt-1 text-sm font-bold text-indigo-600 dark:text-indigo-400">
+                      <p className="text-xs md:text-sm text-slate-400">IBO Cost</p>
+                      <p className="mt-1 text-base md:text-lg font-bold text-indigo-600 dark:text-indigo-400">
                         {product.pv.toFixed(1)} PV
                       </p>
                     </div>
@@ -253,12 +253,12 @@ export default function ProductsPage() {
                   {product.competingBrand && (
                     <div className="mt-2 border-t border-slate-100 dark:border-slate-700 pt-2">
                       <div className="flex items-center justify-between">
-                        <span className="text-xs text-slate-500">
+                        <span className="text-sm text-slate-500">
                           Replaces: {product.competingBrand}{" "}
                           {product.competingProduct}
                         </span>
                         {product.competingPrice > 0 && (
-                          <span className="text-xs font-semibold text-slate-500">
+                          <span className="text-sm font-semibold text-slate-500">
                             {formatCurrency(product.competingPrice)}
                           </span>
                         )}
@@ -300,7 +300,7 @@ function StepIndicator({
         {completed ? "✓" : number}
       </span>
       <span
-        className={`text-sm font-medium ${
+        className={`text-base font-medium ${
           active
             ? "text-slate-800 dark:text-slate-200"
             : "text-slate-400 dark:text-slate-500"
