@@ -125,20 +125,20 @@ function CategoryCard({ category, onAmountChange, highlight }: CategoryCardProps
       <div className="flex items-start justify-between mb-4">
         <div>
           <h3 className="text-lg font-bold text-slate-800 dark:text-slate-200">{category.title}</h3>
-          <p className="text-xs text-slate-500 mt-0.5">{category.description}</p>
+          <p className="text-sm text-slate-600 dark:text-slate-400 mt-0.5">{category.description}</p>
         </div>
-        <span className={`${colors.badge} text-white text-sm font-bold px-3 py-1 rounded-full`}>
+        <span className={`${colors.badge} text-white text-base font-bold px-3 py-1 rounded-full`}>
           {formatCurrency(total)}
         </span>
       </div>
       <div className="space-y-3">
         {category.items.map((item) => (
           <div key={item.id} className="flex items-center gap-3">
-            <label className="flex-1 text-sm font-medium text-slate-700 dark:text-slate-300">
+            <label className="flex-1 text-base font-medium text-slate-700 dark:text-slate-300">
               {item.label}
             </label>
             <div className="relative">
-              <span className="absolute left-3 top-1/2 -translate-y-1/2 text-xs text-slate-400">$</span>
+              <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-slate-400">$</span>
               <input
                 type="text"
                 inputMode="numeric"
@@ -152,7 +152,7 @@ function CategoryCard({ category, onAmountChange, highlight }: CategoryCardProps
                 }}
                 onFocus={(e) => e.target.select()}
                 placeholder="0"
-                className={`w-28 border border-slate-300 dark:border-slate-600 rounded-xl pl-7 pr-3 py-2 text-sm font-semibold bg-white dark:bg-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 ${colors.ring}`}
+                className={`w-32 border border-slate-300 dark:border-slate-600 rounded-xl pl-8 pr-3 py-2 text-base font-semibold bg-white dark:bg-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 ${colors.ring}`}
               />
             </div>
           </div>
@@ -168,11 +168,11 @@ function ProgressBar({ value, max, label, sublabel }: { value: number; max: numb
 
   return (
     <div className="space-y-1">
-      <div className="flex justify-between text-sm">
+      <div className="flex justify-between text-base">
         <span className="font-medium text-slate-700 dark:text-slate-300">{label}</span>
         <span className="font-bold text-slate-800 dark:text-slate-200">{pct.toFixed(0)}%</span>
       </div>
-      {sublabel && <p className="text-xs text-slate-500">{sublabel}</p>}
+      {sublabel && <p className="text-sm text-slate-600 dark:text-slate-400">{sublabel}</p>}
       <div className="h-3 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
         <div className={`h-full rounded-full transition-all duration-500 ${barColor}`} style={{ width: `${pct}%` }} />
       </div>
@@ -240,9 +240,8 @@ export default function BudgetingPage() {
           <h1 className="text-4xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-slate-100">
             Business Budget
           </h1>
-          <p className="text-slate-500 text-base mt-2 max-w-2xl">
-            Optimize cash flow, trim personal waste, and strategically reinvest freed capital
-            into wealth-generating business activities.
+          <p className="text-slate-600 dark:text-slate-400 text-lg mt-2 max-w-2xl">
+            Optimize cash flow, trim personal waste, and strategically reinvest freed capital into wealth-generating business activities.
           </p>
         </div>
 
@@ -254,60 +253,10 @@ export default function BudgetingPage() {
             { label: "Self-Sufficiency", value: `${totals.selfSufficiency.toFixed(0)}%`, color: totals.selfSufficiency >= 100 ? "text-emerald-600" : "text-amber-600" },
           ].map(({ label, value, color }) => (
             <div key={label} className="bg-white dark:bg-slate-800 rounded-2xl shadow-md p-4 sm:p-5 border border-slate-100 dark:border-slate-700">
-              <p className="text-xs text-slate-500 font-medium uppercase tracking-wide">{label}</p>
+              <p className="text-sm text-slate-600 dark:text-slate-400 font-medium uppercase tracking-wide">{label}</p>
               <p className={`text-xl sm:text-2xl md:text-3xl font-black mt-2 break-words ${color}`}>{value}</p>
             </div>
           ))}
-        </div>
-
-        {/* Tighten the Belt - Capital Redirection */}
-        <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur rounded-3xl p-6 shadow-xl border border-slate-100 dark:border-slate-700">
-          <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-1">Capital Redirection Rate</h2>
-          <p className="text-slate-500 text-sm mb-4">
-            Set your discretionary spending commitment for next month. Compare it to your current typical spending to see how much capital you can free up for business reinvestment.
-          </p>
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-4">
-            <label className="text-sm font-medium text-slate-700 dark:text-slate-300">
-              Next Month&rsquo;s Target
-            </label>
-            <div className="relative">
-              <span className="absolute left-3 top-1/2 -translate-y-1/2 text-xs text-slate-400">$</span>
-              <input
-                type="text"
-                inputMode="numeric"
-                pattern="[0-9]*"
-                value={discretionaryBudgetTarget || ""}
-                onChange={(e) => {
-                  const val = e.target.value;
-                  if (val === "" || /^\d+$/.test(val)) {
-                    setDiscretionaryBudgetTarget(val === "" ? 0 : Number(val));
-                  }
-                }}
-                onFocus={(e) => e.target.select()}
-                placeholder="0"
-                className="w-36 border border-slate-300 dark:border-slate-600 rounded-xl pl-7 pr-3 py-2 text-sm font-semibold bg-white dark:bg-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-amber-400"
-              />
-            </div>
-            <div className="text-sm text-slate-600 dark:text-slate-400">
-              Current Typical: <span className="font-bold">{formatCurrency(totals.discretionaryActual)}</span>
-              {" | "}
-              Will Free Up: <span className="font-bold text-emerald-600">{formatCurrency(totals.capitalRedirectionRate)}</span>
-            </div>
-          </div>
-          <p className="text-xs text-slate-500 italic">
-            By hitting your target next month, you&rsquo;ll have <span className="font-bold text-emerald-600">{formatCurrency(totals.capitalRedirectionRate)}</span> available for business reinvestment.
-          </p>
-          <div className="mt-5 bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-700 rounded-xl p-4">
-            <p className="text-xs font-bold uppercase tracking-wide text-slate-500 mb-2">How this works</p>
-            <p className="text-sm text-slate-700 dark:text-slate-300">
-              Say you currently spend <span className="font-semibold">$800/month</span> on discretionary items (dining out, entertainment, subscriptions).
-              You commit to cutting back to <span className="font-semibold">$500</span> next month.
-            </p>
-            <p className="text-sm text-slate-700 dark:text-slate-300 mt-2">
-              <span className="font-semibold">$800 &minus; $500 = $300</span>{" "}you&rsquo;ll free up next month.
-              That $300 can be redirected into business activities like personal volume redirection, samples, function tickets, or tools &mdash; turning lifestyle spending into asset-building capital.
-            </p>
-          </div>
         </div>
 
         {/* Income Categories */}
@@ -347,11 +296,60 @@ export default function BudgetingPage() {
           />
         </div>
 
+        {/* Tighten the Belt - Capital Redirection */}
+        <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur rounded-3xl p-6 shadow-xl border border-slate-100 dark:border-slate-700">
+          <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-1">Capital Redirection</h2>
+          <p className="text-slate-600 dark:text-slate-400 text-base mb-4">
+            Set your discretionary spending commitment for next month. Compare it to your current typical spending to see how much capital you can free up for business reinvestment.
+          </p>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-4">
+            <label className="text-base font-medium text-slate-700 dark:text-slate-300">
+              Next Month&rsquo;s Target
+            </label>
+            <div className="relative">
+              <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-slate-400">$</span>
+              <input
+                type="text"
+                inputMode="numeric"
+                pattern="[0-9]*"
+                value={discretionaryBudgetTarget || ""}
+                onChange={(e) => {
+                  const val = e.target.value;
+                  if (val === "" || /^\d+$/.test(val)) {
+                    setDiscretionaryBudgetTarget(val === "" ? 0 : Number(val));
+                  }
+                }}
+                onFocus={(e) => e.target.select()}
+                placeholder="0"
+                className="w-40 border border-slate-300 dark:border-slate-600 rounded-xl pl-8 pr-3 py-2 text-base font-semibold bg-white dark:bg-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-amber-400"
+              />
+            </div>
+            <div className="text-base text-slate-700 dark:text-slate-300">
+              Current Typical: <span className="font-bold">{formatCurrency(totals.discretionaryActual)}</span>
+              {" | "}
+              Will Free Up: <span className="font-bold text-emerald-600">{formatCurrency(totals.capitalRedirectionRate)}</span>
+            </div>
+          </div>
+          <p className="text-sm text-slate-600 dark:text-slate-400 italic">
+            By hitting your target next month, you&rsquo;ll have <span className="font-bold text-emerald-600">{formatCurrency(totals.capitalRedirectionRate)}</span> available for business reinvestment.
+          </p>
+          <div className="mt-5 bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-700 rounded-xl p-4">
+            <p className="text-sm font-bold uppercase tracking-wide text-slate-600 dark:text-slate-400 mb-2">How this works</p>
+            <p className="text-base text-slate-700 dark:text-slate-300">
+              Say you currently spend <span className="font-semibold">$800/month</span> on discretionary items (dining out, entertainment, subscriptions).
+              You commit to cutting back to <span className="font-semibold">$500</span> next month.
+            </p>
+            <p className="text-base text-slate-700 dark:text-slate-300 mt-2">
+              <span className="font-semibold">$800 &minus; $500 = $300</span>{" "}you&rsquo;ll free up next month.
+              That $300 can be redirected into business activities like personal volume redirection, samples, function tickets, or tools &mdash; turning lifestyle spending into asset-building capital.
+            </p>
+          </div>
+        </div>
 
         {/* Milestone Tracker */}
         <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur rounded-3xl p-6 shadow-xl border border-slate-100 dark:border-slate-700">
           <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-1">Debt &amp; Bill Offset Tracker</h2>
-          <p className="text-slate-500 text-sm mb-6">
+          <p className="text-slate-600 dark:text-slate-400 text-base mb-6">
             Track how your business income progressively covers your expenses — from operational overhead to full financial freedom.
           </p>
           <div className="space-y-5">
@@ -385,14 +383,14 @@ export default function BudgetingPage() {
         {/* Business Self-Sufficiency Detail */}
         <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur rounded-3xl p-6 shadow-xl border border-slate-100 dark:border-slate-700">
           <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-1">Business Self-Sufficiency</h2>
-          <p className="text-slate-500 text-sm mb-4">
+          <p className="text-slate-600 dark:text-slate-400 text-base mb-4">
             At 100%, your business pays for its own tools, travel, and samples. Above 100% is net profit flowing back into your household.
           </p>
           <div className="flex items-center gap-6">
             <div className={`text-5xl font-black ${totals.selfSufficiency >= 100 ? "text-emerald-600" : "text-amber-600"}`}>
               {totals.selfSufficiency.toFixed(0)}%
             </div>
-            <div className="text-sm text-slate-600 dark:text-slate-400 space-y-1">
+            <div className="text-base text-slate-700 dark:text-slate-300 space-y-1">
               <p>Business Income: <span className="font-bold">{formatCurrency(totals.businessIncome)}</span></p>
               <p>Total Business Expenses: <span className="font-bold">{formatCurrency(totals.totalBusinessExpenses)}</span></p>
               {totals.selfSufficiency >= 100 && (
@@ -407,35 +405,35 @@ export default function BudgetingPage() {
         {/* Monthly Summary */}
         <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur rounded-3xl p-6 shadow-xl border border-slate-100 dark:border-slate-700">
           <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-4">Monthly Cash Flow Summary</h2>
-          <div className="grid sm:grid-cols-2 gap-4 text-sm">
+          <div className="grid sm:grid-cols-2 gap-4 text-base">
             <div className="space-y-2">
-              <div className="flex justify-between py-1 border-b border-slate-100 dark:border-slate-700">
-                <span className="text-slate-600 dark:text-slate-400">Personal Income</span>
+              <div className="flex justify-between py-1.5 border-b border-slate-100 dark:border-slate-700">
+                <span className="text-slate-700 dark:text-slate-300">Personal Income</span>
                 <span className="font-bold text-emerald-600">{formatCurrency(totals.personalIncome)}</span>
               </div>
-              <div className="flex justify-between py-1 border-b border-slate-100 dark:border-slate-700">
-                <span className="text-slate-600 dark:text-slate-400">Business Income</span>
+              <div className="flex justify-between py-1.5 border-b border-slate-100 dark:border-slate-700">
+                <span className="text-slate-700 dark:text-slate-300">Business Income</span>
                 <span className="font-bold text-indigo-600">{formatCurrency(totals.businessIncome)}</span>
               </div>
-              <div className="flex justify-between py-1 border-b border-slate-200 dark:border-slate-600">
+              <div className="flex justify-between py-1.5 border-b border-slate-200 dark:border-slate-600">
                 <span className="font-semibold text-slate-800 dark:text-slate-200">Total Income</span>
                 <span className="font-black text-emerald-600">{formatCurrency(totals.totalIncome)}</span>
               </div>
             </div>
             <div className="space-y-2">
-              <div className="flex justify-between py-1 border-b border-slate-100 dark:border-slate-700">
-                <span className="text-slate-600 dark:text-slate-400">Fixed Expenses</span>
+              <div className="flex justify-between py-1.5 border-b border-slate-100 dark:border-slate-700">
+                <span className="text-slate-700 dark:text-slate-300">Fixed Expenses</span>
                 <span className="font-bold text-red-600">{formatCurrency(totals.fixedExpenses)}</span>
               </div>
-              <div className="flex justify-between py-1 border-b border-slate-100 dark:border-slate-700">
-                <span className="text-slate-600 dark:text-slate-400">Discretionary</span>
+              <div className="flex justify-between py-1.5 border-b border-slate-100 dark:border-slate-700">
+                <span className="text-slate-700 dark:text-slate-300">Discretionary</span>
                 <span className="font-bold text-amber-600">{formatCurrency(totals.discretionaryActual)}</span>
               </div>
-              <div className="flex justify-between py-1 border-b border-slate-100 dark:border-slate-700">
-                <span className="text-slate-600 dark:text-slate-400">Business Investment</span>
+              <div className="flex justify-between py-1.5 border-b border-slate-100 dark:border-slate-700">
+                <span className="text-slate-700 dark:text-slate-300">Business Investment</span>
                 <span className="font-bold text-violet-600">{formatCurrency(totals.totalBusinessExpenses)}</span>
               </div>
-              <div className="flex justify-between py-1 border-b border-slate-200 dark:border-slate-600">
+              <div className="flex justify-between py-1.5 border-b border-slate-200 dark:border-slate-600">
                 <span className="font-semibold text-slate-800 dark:text-slate-200">Total Expenses</span>
                 <span className="font-black text-red-600">{formatCurrency(totals.totalExpenses)}</span>
               </div>
@@ -451,8 +449,8 @@ export default function BudgetingPage() {
 
         {/* Mindset Note */}
         <div className="bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-800 rounded-2xl p-5">
-          <h3 className="font-bold text-base text-indigo-900 dark:text-indigo-200 mb-2">The Reinvestment Mindset</h3>
-          <p className="text-sm text-indigo-800 dark:text-indigo-300">
+          <h3 className="font-bold text-lg text-indigo-900 dark:text-indigo-200 mb-2">The Reinvestment Mindset</h3>
+          <p className="text-base text-indigo-800 dark:text-indigo-300">
             Business expenses and sample purchasing are not losses &mdash; they are <span className="font-bold">Investments in PV / Asset Building</span>.
             Every dollar invested in volume generation today accelerates your path to the business fully covering all personal expenses.
           </p>
