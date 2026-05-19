@@ -14,6 +14,7 @@ const links = [
   { href: "/income", label: "Income Calculator" },
   { href: "/budgeting", label: "Budgeting" },
   { href: "/checklist", label: "Checklist" },
+  { href: "/products", label: "Products" },
 ];
 
 type NavigationProps = {
