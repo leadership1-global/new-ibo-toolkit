@@ -1,67 +1,126 @@
 'use client';
 
 import { useState } from 'react';
+import {
+  BookOpen,
+  Headphones,
+  Smartphone,
+  Users,
+  ShoppingCart,
+  Handshake,
+  BarChart3,
+  MessageCircle,
+  Lightbulb,
+  Sparkles,
+  type LucideIcon
+} from 'lucide-react';
 
 // Icon components for each habit
-const HabitIcon = ({ type, color }: { type: string; color: string }) => {
-  const iconClasses = `w-8 h-8 ${color}`;
-
-  const icons = {
-    book: (
-      <svg className={iconClasses} fill="currentColor" viewBox="0 0 24 24">
-        <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" />
-        <path d="M3 4c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v16c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V4z" fillOpacity="0.3" />
-      </svg>
-    ),
-    headphones: (
-      <svg className={iconClasses} fill="currentColor" viewBox="0 0 24 24">
-        <path d="M12 1C6.48 1 2 5.48 2 11v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8c0-4.41 3.59-8 8-8s8 3.59 8 8v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8c0-5.52-4.48-10-10-10zm-4 12c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h2v-8h-2zm8 0h-2v8h2c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2z" />
-      </svg>
-    ),
-    app: (
-      <svg className={iconClasses} fill="currentColor" viewBox="0 0 24 24">
-        <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z" />
-      </svg>
-    ),
-    people: (
-      <svg className={iconClasses} fill="currentColor" viewBox="0 0 24 24">
-        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.64 2.23 1.72 2.73 3.05H23v-2.5c0-2.33-4.67-3.5-7-3.5z" />
-      </svg>
-    ),
-    checkmark: (
-      <svg className={iconClasses} fill="currentColor" viewBox="0 0 24 24">
-        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
-      </svg>
-    ),
-    store: (
-      <svg className={iconClasses} fill="currentColor" viewBox="0 0 24 24">
-        <path d="M18 6h-2c0-2.21-1.79-4-4-4s-4 1.79-4 4H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-5-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm5 16H6V8h12v12zm-5-10c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3z" />
-      </svg>
-    ),
-    cart: (
-      <svg className={iconClasses} fill="currentColor" viewBox="0 0 24 24">
-        <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2zM7.17 14.75L7.1 15H19v2H7c-1.1 0-2-.9-2-2 0-.28.06-.54.16-.77L6.62 11H3V9h4.62l.27-.63L9.5 4H5V2h6l-1.63 3.82L7.17 14.75zM9.5 4l-1.13 2.64-.27.61-.82 1.92L6.1 13h11.45L19 8H9.5z" />
-      </svg>
-    ),
-    megaphone: (
-      <svg className={iconClasses} fill="currentColor" viewBox="0 0 24 24">
-        <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z" />
-      </svg>
-    ),
-    chart: (
-      <svg className={iconClasses} fill="currentColor" viewBox="0 0 24 24">
-        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" />
-      </svg>
-    ),
-    chat: (
-      <svg className={iconClasses} fill="currentColor" viewBox="0 0 24 24">
-        <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" />
-      </svg>
-    ),
+const HabitIcon = ({ type, className }: { type: string; className: string }) => {
+  const icons: Record<string, LucideIcon> = {
+    book: BookOpen,
+    headphones: Headphones,
+    app: Smartphone,
+    people: Users,
+    cart: ShoppingCart,
+    handshake: Handshake,
+    chart: BarChart3,
+    chat: MessageCircle,
   };
 
-  return icons[type as keyof typeof icons] || null;
+  const Icon = icons[type] || BookOpen;
+  return <Icon className={className} />;
 };
+
+const pillarsData = [
+  {
+    id: 1,
+    title: "Pillar 1: Personal Growth & Mindset",
+    subtitle: "Develops leadership qualities and mental fortitude required for long-term success.",
+    color: "blue",
+    habits: [
+      {
+        id: 1,
+        title: "Read Daily (15–30 Minutes)",
+        icon: "book",
+        description: "Consistently reading books on leadership, communication, and mindset helps you stay positive and equips you with the skills to lead a team.",
+        frequency: "Daily"
+      },
+      {
+        id: 2,
+        title: "Listen to Podcasts Daily",
+        icon: "headphones",
+        description: "Provides \"mental nutrition\" and practical strategies from successful leaders that you can apply to your business immediately.",
+        frequency: "Daily"
+      },
+      {
+        id: 3,
+        title: "Podcast App Subscription",
+        icon: "app",
+        description: "Ensures you have streamlined, consistent access to the latest training and motivational content shared within your organization.",
+        frequency: "Monthly"
+      },
+      {
+        id: 4,
+        title: "Attend All Associations",
+        icon: "people",
+        description: "Whether weekly meetings or major conventions, these events build belief, provide training, and keep you connected to the community.",
+        frequency: "Weekly"
+      }
+    ]
+  },
+  {
+    id: 2,
+    title: "Pillar 2: Product Integrity",
+    subtitle: "Building a foundation of authenticity by becoming a direct advocate for the brand.",
+    color: "green",
+    habits: [
+      {
+        id: 5,
+        title: "Redirect Shopping",
+        icon: "cart",
+        description: "Use the products yourself to build firsthand understanding and \"store loyalty,\" making your recommendations authentic and credible. In other words, Be a Product of the Product.",
+        frequency: "Ongoing"
+      },
+      {
+        id: 6,
+        title: "Develop a Retail Base",
+        icon: "people",
+        description: "Building a small, loyal group of customers ensures your business has consistent volume and proves market demand for your offerings.",
+        frequency: "Weekly"
+      }
+    ]
+  },
+  {
+    id: 3,
+    title: "Pillar 3: Business Activity & Strategy",
+    subtitle: "Mechanical habits that drive growth and ensure you are duplicating a proven system.",
+    color: "purple",
+    habits: [
+      {
+        id: 7,
+        title: "Make Introductions",
+        icon: "handshake",
+        description: "Actively add new people to your pipeline and master the art of introducing them to your coach. Focus on connecting your contacts to your experienced upline (coach), who will present the business plan on your behalf while you learn the process. Observe how your coach follows up professionally to move prospects toward a decision.",
+        frequency: "Weekly"
+      },
+      {
+        id: 8,
+        title: "Staying Accountable",
+        icon: "chart",
+        description: "Share daily takeaways from your learning, connect with your coach regularly, and manage your time and budget with discipline. Most importantly, be honest about your progress and feelings so you can be supported effectively.",
+        frequency: "Daily"
+      },
+      {
+        id: 9,
+        title: "Counseling",
+        icon: "chat",
+        description: "Regularly review your numbers, map, and progress with your active upline. This strategic \"check-up\" ensures your activity aligns with your goals while maintaining a humble, coachable attitude.",
+        frequency: "Monthly"
+      }
+    ]
+  }
+];
 
 export default function Habits() {
   const [expandedHabit, setExpandedHabit] = useState<number | null>(null);
@@ -70,10 +129,37 @@ export default function Habits() {
     setExpandedHabit(expandedHabit === habitNumber ? null : habitNumber);
   };
 
+  const getColorClasses = (color: string) => {
+    const colors: Record<string, { bg: string; border: string; text: string; hoverBg: string; pillarBg: string }> = {
+      blue: {
+        bg: "from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/20",
+        border: "border-blue-200 dark:border-blue-700/50",
+        text: "text-blue-600 dark:text-blue-400",
+        hoverBg: "hover:bg-blue-100/50 dark:hover:bg-blue-800/30",
+        pillarBg: "bg-gradient-to-b from-blue-600 to-blue-400"
+      },
+      green: {
+        bg: "from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/20",
+        border: "border-green-200 dark:border-green-700/50",
+        text: "text-green-600 dark:text-green-400",
+        hoverBg: "hover:bg-green-100/50 dark:hover:bg-green-800/30",
+        pillarBg: "bg-gradient-to-b from-green-600 to-green-400"
+      },
+      purple: {
+        bg: "from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/20",
+        border: "border-purple-200 dark:border-purple-700/50",
+        text: "text-purple-600 dark:text-purple-400",
+        hoverBg: "hover:bg-purple-100/50 dark:hover:bg-purple-800/30",
+        pillarBg: "bg-gradient-to-b from-purple-600 to-purple-400"
+      }
+    };
+    return colors[color] || colors.blue;
+  };
+
   return (
-    <div className="max-w-5xl mx-auto px-6 py-6">
-      <div className="text-center mb-8">
-        <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 bg-clip-text text-transparent mb-4">
+    <div className="max-w-7xl mx-auto px-6 py-6">
+      <div className="text-center mb-6">
+        <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 bg-clip-text text-transparent mb-4">
           9 Core Habits
         </h1>
         <p className="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto">
@@ -81,342 +167,71 @@ export default function Habits() {
         </p>
       </div>
 
-      {/* Pillar 1 */}
-      <section className="mb-8">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="w-1 h-8 bg-gradient-to-b from-blue-600 to-blue-400 rounded-full"></div>
-          <h2 className="text-2xl font-bold text-blue-700 dark:text-blue-400">
-            Pillar 1: Personal Growth &amp; Mindset
-          </h2>
-        </div>
-        <p className="text-gray-600 dark:text-gray-300 mb-6 italic ml-4 text-lg">
-          Develops leadership qualities and mental fortitude required for long-term success.
-        </p>
-
-        <div className="space-y-3">
-          {/* Habit 1 */}
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/20 rounded-xl border border-blue-200 dark:border-blue-700/50 overflow-hidden transition-all duration-300">
-            <button
-              onClick={() => toggleHabit(1)}
-              className="w-full flex items-center gap-4 p-4 hover:bg-blue-100/50 dark:hover:bg-blue-800/30 transition-colors"
-            >
-              <div className="flex-shrink-0 text-blue-600 dark:text-blue-400">
-                <HabitIcon type="book" color="text-blue-600 dark:text-blue-400" />
-              </div>
-              <h3 className="font-bold text-xl text-blue-900 dark:text-blue-100 flex-1 text-left">
-                1. Read Daily (15–30 Minutes)
-              </h3>
-              <svg
-                className={`w-6 h-6 text-blue-600 dark:text-blue-400 transition-transform duration-300 ${
-                  expandedHabit === 1 ? 'rotate-180' : ''
-                }`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            {expandedHabit === 1 && (
-              <div className="px-4 pb-4 pt-2 border-t border-blue-200/50 dark:border-blue-700/50">
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base">
-                  Consistently reading books on leadership, communication, and mindset helps you stay positive and equips you with the skills to lead a team.
+      {/* All 9 Habits - 3 Columns Side by Side */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        {pillarsData.map((pillar) => {
+          const colors = getColorClasses(pillar.color);
+          return (
+            <section key={pillar.id} className="space-y-3">
+              {/* Pillar Header */}
+              <div className="flex flex-col gap-2">
+                <div className="flex items-center gap-2">
+                  <div className={`w-1 h-8 ${colors.pillarBg} rounded-full`}></div>
+                  <h2 className={`text-3xl font-bold ${colors.text}`}>
+                    Pillar {pillar.id}
+                  </h2>
+                </div>
+                <p className={`text-base ${colors.text} font-semibold pl-3`}>
+                  {pillar.title.replace(/^Pillar \d+: /, '')}
                 </p>
               </div>
-            )}
-          </div>
 
-          {/* Habit 2 */}
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/20 rounded-xl border border-blue-200 dark:border-blue-700/50 overflow-hidden transition-all duration-300">
-            <button
-              onClick={() => toggleHabit(2)}
-              className="w-full flex items-center gap-4 p-4 hover:bg-blue-100/50 dark:hover:bg-blue-800/30 transition-colors"
-            >
-              <div className="flex-shrink-0 text-blue-600 dark:text-blue-400">
-                <HabitIcon type="headphones" color="text-blue-600 dark:text-blue-400" />
+              {/* Habits in this Pillar */}
+              <div className="space-y-2">
+                {pillar.habits.map((habit) => (
+                  <div
+                    key={habit.id}
+                    className={`bg-gradient-to-br ${colors.bg} rounded-lg border ${colors.border} overflow-hidden transition-all duration-300`}
+                  >
+                    <button
+                      onClick={() => toggleHabit(habit.id)}
+                      className={`w-full flex items-start gap-3 p-4 ${colors.hoverBg} transition-colors`}
+                    >
+                      <div className={`flex-shrink-0`}>
+                        <HabitIcon type={habit.icon} className={`w-8 h-8 ${colors.text}`} />
+                      </div>
+                      <h3 className={`font-bold text-2xl ${colors.text} flex-1 text-left leading-tight`}>
+                        {habit.id}. {habit.title}
+                      </h3>
+                      <svg
+                        className={`w-5 h-5 ${colors.text} transition-transform duration-300 flex-shrink-0 ${
+                          expandedHabit === habit.id ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    {expandedHabit === habit.id && (
+                      <div className={`px-4 pb-4 pt-2 border-t ${colors.border}`}>
+                        <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base">
+                          {habit.description}
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                ))}
               </div>
-              <h3 className="font-bold text-xl text-blue-900 dark:text-blue-100 flex-1 text-left">
-                2. Listen to Podcasts Daily
-              </h3>
-              <svg
-                className={`w-6 h-6 text-blue-600 dark:text-blue-400 transition-transform duration-300 ${
-                  expandedHabit === 2 ? 'rotate-180' : ''
-                }`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            {expandedHabit === 2 && (
-              <div className="px-4 pb-4 pt-2 border-t border-blue-200/50 dark:border-blue-700/50">
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base">
-                  Provides &ldquo;mental nutrition&rdquo; and practical strategies from successful leaders that you can apply to your business immediately.
-                </p>
-              </div>
-            )}
-          </div>
-
-          {/* Habit 3 */}
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/20 rounded-xl border border-blue-200 dark:border-blue-700/50 overflow-hidden transition-all duration-300">
-            <button
-              onClick={() => toggleHabit(3)}
-              className="w-full flex items-center gap-4 p-4 hover:bg-blue-100/50 dark:hover:bg-blue-800/30 transition-colors"
-            >
-              <div className="flex-shrink-0 text-blue-600 dark:text-blue-400">
-                <HabitIcon type="app" color="text-blue-600 dark:text-blue-400" />
-              </div>
-              <h3 className="font-bold text-xl text-blue-900 dark:text-blue-100 flex-1 text-left">
-                3. Podcasting App Subscription
-              </h3>
-              <svg
-                className={`w-6 h-6 text-blue-600 dark:text-blue-400 transition-transform duration-300 ${
-                  expandedHabit === 3 ? 'rotate-180' : ''
-                }`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            {expandedHabit === 3 && (
-              <div className="px-4 pb-4 pt-2 border-t border-blue-200/50 dark:border-blue-700/50">
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base">
-                  Ensures you have streamlined, consistent access to the latest training and motivational content shared within your organization.
-                </p>
-              </div>
-            )}
-          </div>
-
-          {/* Habit 4 */}
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/20 rounded-xl border border-blue-200 dark:border-blue-700/50 overflow-hidden transition-all duration-300">
-            <button
-              onClick={() => toggleHabit(4)}
-              className="w-full flex items-center gap-4 p-4 hover:bg-blue-100/50 dark:hover:bg-blue-800/30 transition-colors"
-            >
-              <div className="flex-shrink-0 text-blue-600 dark:text-blue-400">
-                <HabitIcon type="people" color="text-blue-600 dark:text-blue-400" />
-              </div>
-              <h3 className="font-bold text-xl text-blue-900 dark:text-blue-100 flex-1 text-left">
-                4. Attend All Associations
-              </h3>
-              <svg
-                className={`w-6 h-6 text-blue-600 dark:text-blue-400 transition-transform duration-300 ${
-                  expandedHabit === 4 ? 'rotate-180' : ''
-                }`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            {expandedHabit === 4 && (
-              <div className="px-4 pb-4 pt-2 border-t border-blue-200/50 dark:border-blue-700/50">
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base">
-                  Whether weekly meetings or major conventions, these events build belief, provide training, and keep you connected to the community.
-                </p>
-              </div>
-            )}
-          </div>
-        </div>
-      </section>
-
-      {/* Pillar 2 */}
-      <section className="mb-8">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="w-1 h-8 bg-gradient-to-b from-green-600 to-green-400 rounded-full"></div>
-          <h2 className="text-2xl font-bold text-green-700 dark:text-green-400">
-            Pillar 2: Product Integrity
-          </h2>
-        </div>
-        <p className="text-gray-600 dark:text-gray-300 mb-6 italic ml-4 text-lg">
-          Building a foundation of authenticity by becoming a direct advocate for the brand.
-        </p>
-
-        <div className="space-y-3">
-          {/* Habit 5 */}
-          <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/20 rounded-xl border border-green-200 dark:border-green-700/50 overflow-hidden transition-all duration-300">
-            <button
-              onClick={() => toggleHabit(5)}
-              className="w-full flex items-center gap-4 p-4 hover:bg-green-100/50 dark:hover:bg-green-800/30 transition-colors"
-            >
-              <div className="flex-shrink-0 text-green-600 dark:text-green-400">
-                <HabitIcon type="cart" color="text-green-600 dark:text-green-400" />
-              </div>
-              <h3 className="font-bold text-xl text-green-900 dark:text-green-100 flex-1 text-left">
-                5. Be a Product of the Product
-              </h3>
-              <svg
-                className={`w-6 h-6 text-green-600 dark:text-green-400 transition-transform duration-300 ${
-                  expandedHabit === 5 ? 'rotate-180' : ''
-                }`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            {expandedHabit === 5 && (
-              <div className="px-4 pb-4 pt-2 border-t border-green-200/50 dark:border-green-700/50">
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base">
-                  Use the products yourself to build firsthand understanding and &ldquo;store loyalty,&rdquo; making your recommendations authentic and credible.
-                </p>
-              </div>
-            )}
-          </div>
-
-          {/* Habit 6 */}
-          <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/20 rounded-xl border border-green-200 dark:border-green-700/50 overflow-hidden transition-all duration-300">
-            <button
-              onClick={() => toggleHabit(6)}
-              className="w-full flex items-center gap-4 p-4 hover:bg-green-100/50 dark:hover:bg-green-800/30 transition-colors"
-            >
-              <div className="flex-shrink-0 text-green-600 dark:text-green-400">
-                <HabitIcon type="people" color="text-green-600 dark:text-green-400" />
-              </div>
-              <h3 className="font-bold text-xl text-green-900 dark:text-green-100 flex-1 text-left">
-                6. Develop a Retail Base
-              </h3>
-              <svg
-                className={`w-6 h-6 text-green-600 dark:text-green-400 transition-transform duration-300 ${
-                  expandedHabit === 6 ? 'rotate-180' : ''
-                }`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            {expandedHabit === 6 && (
-              <div className="px-4 pb-4 pt-2 border-t border-green-200/50 dark:border-green-700/50">
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base">
-                  Building a small, loyal group of customers ensures your business has consistent volume and proves market demand for your offerings.
-                </p>
-              </div>
-            )}
-          </div>
-        </div>
-      </section>
-
-      {/* Pillar 3 */}
-      <section className="mb-8">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="w-1 h-8 bg-gradient-to-b from-purple-600 to-purple-400 rounded-full"></div>
-          <h2 className="text-2xl font-bold text-purple-700 dark:text-purple-400">
-            Pillar 3: Business Activity &amp; Strategy
-          </h2>
-        </div>
-        <p className="text-gray-600 dark:text-gray-300 mb-6 italic ml-4 text-lg">
-          Mechanical habits that drive growth and ensure you are duplicating a proven system.
-        </p>
-
-        <div className="space-y-3">
-          {/* Habit 7 */}
-          <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/20 rounded-xl border border-purple-200 dark:border-purple-700/50 overflow-hidden transition-all duration-300">
-            <button
-              onClick={() => toggleHabit(7)}
-              className="w-full flex items-center gap-4 p-4 hover:bg-purple-100/50 dark:hover:bg-purple-800/30 transition-colors"
-            >
-              <div className="flex-shrink-0 text-purple-600 dark:text-purple-400">
-                <HabitIcon type="megaphone" color="text-purple-600 dark:text-purple-400" />
-              </div>
-              <h3 className="font-bold text-xl text-purple-900 dark:text-purple-100 flex-1 text-left">
-                7. Make Introductions
-              </h3>
-              <svg
-                className={`w-6 h-6 text-purple-600 dark:text-purple-400 transition-transform duration-300 ${
-                  expandedHabit === 7 ? 'rotate-180' : ''
-                }`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            {expandedHabit === 7 && (
-              <div className="px-4 pb-4 pt-2 border-t border-purple-200/50 dark:border-purple-700/50">
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base">
-                  Actively add new people to your pipeline and master the art of introducing them to your coach. Focus on connecting your contacts to your experienced upline (coach), who will present the business plan on your behalf while you learn the process. Observe how your coach follows up professionally to move prospects toward a decision.
-                </p>
-              </div>
-            )}
-          </div>
-
-          {/* Habit 8 */}
-          <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/20 rounded-xl border border-purple-200 dark:border-purple-700/50 overflow-hidden transition-all duration-300">
-            <button
-              onClick={() => toggleHabit(8)}
-              className="w-full flex items-center gap-4 p-4 hover:bg-purple-100/50 dark:hover:bg-purple-800/30 transition-colors"
-            >
-              <div className="flex-shrink-0 text-purple-600 dark:text-purple-400">
-                <HabitIcon type="chart" color="text-purple-600 dark:text-purple-400" />
-              </div>
-              <h3 className="font-bold text-xl text-purple-900 dark:text-purple-100 flex-1 text-left">
-                8. Staying Accountable
-              </h3>
-              <svg
-                className={`w-6 h-6 text-purple-600 dark:text-purple-400 transition-transform duration-300 ${
-                  expandedHabit === 8 ? 'rotate-180' : ''
-                }`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            {expandedHabit === 8 && (
-              <div className="px-4 pb-4 pt-2 border-t border-purple-200/50 dark:border-purple-700/50">
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base">
-                  Share daily takeaways from your learning, connect with your coach regularly, and manage your time and budget with discipline. Most importantly, be honest about your progress and feelings so you can be supported effectively.
-                </p>
-              </div>
-            )}
-          </div>
-
-          {/* Habit 9 */}
-          <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/20 rounded-xl border border-purple-200 dark:border-purple-700/50 overflow-hidden transition-all duration-300">
-            <button
-              onClick={() => toggleHabit(9)}
-              className="w-full flex items-center gap-4 p-4 hover:bg-purple-100/50 dark:hover:bg-purple-800/30 transition-colors"
-            >
-              <div className="flex-shrink-0 text-purple-600 dark:text-purple-400">
-                <HabitIcon type="chat" color="text-purple-600 dark:text-purple-400" />
-              </div>
-              <h3 className="font-bold text-xl text-purple-900 dark:text-purple-100 flex-1 text-left">
-                9. Counseling
-              </h3>
-              <svg
-                className={`w-6 h-6 text-purple-600 dark:text-purple-400 transition-transform duration-300 ${
-                  expandedHabit === 9 ? 'rotate-180' : ''
-                }`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            {expandedHabit === 9 && (
-              <div className="px-4 pb-4 pt-2 border-t border-purple-200/50 dark:border-purple-700/50">
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base">
-                  Regularly review your numbers, map, and progress with your active upline. This strategic &ldquo;check-up&rdquo; ensures your activity aligns with your goals while maintaining a humble, coachable attitude.
-                </p>
-              </div>
-            )}
-          </div>
-        </div>
-      </section>
+            </section>
+          );
+        })}
+      </div>
 
       {/* Habit Frequency Guide */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold text-center mb-6 text-gray-800 dark:text-gray-200">
+      <section className="mb-8 mt-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 bg-clip-text text-transparent">
           Habit Frequency Guide
         </h2>
 
@@ -425,11 +240,11 @@ export default function Habits() {
           <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/20 rounded-xl p-5 border border-blue-200 dark:border-blue-700/50">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-1 h-6 bg-gradient-to-b from-blue-600 to-blue-400 rounded-full"></div>
-              <h3 className="font-semibold text-lg text-blue-700 dark:text-blue-400">Daily</h3>
+              <h3 className="font-semibold text-2xl text-blue-700 dark:text-blue-400">Daily</h3>
             </div>
             <ul className="space-y-3">
-              {["Read daily (15–30 minutes)", "Listen to audios/podcasts daily", "Staying accountable"].map((item) => (
-                <li key={item} className="flex items-start gap-2 text-base text-gray-700 dark:text-gray-300">
+              {["Read daily (15–30 minutes)", "Listen to podcasts daily", "Staying accountable"].map((item) => (
+                <li key={item} className="flex items-start gap-2 font-semibold text-lg text-gray-700 dark:text-gray-300">
                   <span className="mt-1.5 w-2 h-2 rounded-full bg-blue-400 flex-shrink-0"></span>
                   {item}
                 </li>
@@ -441,11 +256,11 @@ export default function Habits() {
           <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/20 rounded-xl p-5 border border-green-200 dark:border-green-700/50">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-1 h-6 bg-gradient-to-b from-green-600 to-green-400 rounded-full"></div>
-              <h3 className="font-semibold text-lg text-green-700 dark:text-green-400">Weekly</h3>
+              <h3 className="font-semibold text-2xl text-green-700 dark:text-green-400">Weekly</h3>
             </div>
             <ul className="space-y-3">
               {["Attend all associations", "Make Introductions", "Develop a retail base", "Staying accountable"].map((item) => (
-                <li key={item} className="flex items-start gap-2 text-base text-gray-700 dark:text-gray-300">
+                <li key={item} className="flex items-start gap-2 font-semibold text-lg text-gray-700 dark:text-gray-300">
                   <span className="mt-1.5 w-2 h-2 rounded-full bg-green-400 flex-shrink-0"></span>
                   {item}
                 </li>
@@ -457,11 +272,11 @@ export default function Habits() {
           <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/20 rounded-xl p-5 border border-purple-200 dark:border-purple-700/50">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-1 h-6 bg-gradient-to-b from-purple-600 to-purple-400 rounded-full"></div>
-              <h3 className="font-semibold text-lg text-purple-700 dark:text-purple-400">Monthly</h3>
+              <h3 className="font-semibold text-2xl text-purple-700 dark:text-purple-400">Monthly</h3>
             </div>
             <ul className="space-y-3">
-              {["Podcasting app subscription", "Redirect shopping", "Counseling", "Staying accountable"].map((item) => (
-                <li key={item} className="flex items-start gap-2 text-base text-gray-700 dark:text-gray-300">
+              {["Podcast App Subscription", "Redirect shopping", "Counseling", "Staying accountable"].map((item) => (
+                <li key={item} className="flex items-start gap-2 font-semibold text-lg text-gray-700 dark:text-gray-300">
                   <span className="mt-1.5 w-2 h-2 rounded-full bg-purple-400 flex-shrink-0"></span>
                   {item}
                 </li>
@@ -474,28 +289,24 @@ export default function Habits() {
   {/* Note & Pro Tip */ }
   <div className="border-t border-gray-200 dark:border-gray-700 pt-6">
     <div className="grid md:grid-cols-2 gap-6">
-      <div className="bg-gradient-to-br from-amber-50 to-amber-100 dark:from-amber-900/30 dark:to-amber-800/20 border-l-4 border-amber-500 p-6 rounded-r-xl hover:shadow-lg transition-all duration-300">
-        <div className="flex gap-4">
-          <div className="text-3xl">💡</div>
-          <div>
-            <p className="font-bold text-xl text-amber-900 dark:text-amber-100 mb-3">Note</p>
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base">
-              These nine habits create a balanced approach, ensuring that as your business grows (Pillar 3), your personal capacity (Pillar 1) and belief in the brand (Pillar 2) grow along with it.
-            </p>
-          </div>
+      <div className="bg-gradient-to-br from-amber-50 to-amber-100 dark:from-amber-900/30 dark:to-amber-800/20 border-l-4 border-amber-500 p-4 rounded-r-xl hover:shadow-lg transition-all duration-300">
+        <div className="flex items-start gap-3 mb-2">
+          <Lightbulb className="w-5 h-5 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
+          <p className="font-bold text-lg text-amber-900 dark:text-amber-100">Note</p>
         </div>
+        <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base">
+          These nine habits create a balanced approach, ensuring that as your business grows (Pillar 3), your personal capacity (Pillar 1) and belief in the brand (Pillar 2) grow along with it and vice versa.
+        </p>
       </div>
 
-      <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/20 border-l-4 border-blue-500 p-6 rounded-r-xl hover:shadow-lg transition-all duration-300">
-        <div className="flex gap-4">
-          <div className="text-3xl">⭐</div>
-          <div>
-            <p className="font-bold text-xl text-blue-900 dark:text-blue-100 mb-3">Pro Tip</p>
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base">
-              Mastery doesn&apos;t happen overnight. Most successful builders suggest picking one or two habits to master each month until the full routine becomes second nature.
-            </p>
-          </div>
+      <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/20 border-l-4 border-blue-500 p-4 rounded-r-xl hover:shadow-lg transition-all duration-300">
+        <div className="flex items-start gap-3 mb-2">
+          <Sparkles className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
+          <p className="font-bold text-lg text-blue-900 dark:text-blue-100">Pro Tip</p>
         </div>
+        <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base">
+          Mastery doesn&apos;t happen overnight. Most successful builders suggest picking one or two habits to master each month until the full routine becomes second nature.
+        </p>
       </div>
     </div>
   </div>
