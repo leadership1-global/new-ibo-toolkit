@@ -6,7 +6,7 @@ export const HOUSEHOLD_OPTIONS: { id: HouseholdType; label: string }[] = [
   { id: "single-male", label: "Single Male" },
   { id: "single-female", label: "Single Female" },
   { id: "couple", label: "Couple" },
-  { id: "couple-with-kids", label: "Couple with 2 Kids" },
+  { id: "couple-with-kids", label: "Couple with Kids" },
 ];
 
 export const PV_TIERS: PvTier[] = [50, 100, 150];
@@ -138,8 +138,8 @@ export const BUNDLES: Record<HouseholdType, Record<PvTier, string[]>> = {
       "126187",  // Nutrilite Organics Kids Complete Superfood Powder
       "120571",  // Nutrilite Balance Within Probiotic
       "124106",  // Glister Multi-Action Toothpaste
-      "126308",  // g&h Baby Wash & Shampoo
-      "126309",  // g&h Baby Lotion
+      "125890",  // g&h Nourish Body Wash 400 mL
+      "125891",  // g&h Nourish Body Lotion
       "E0001",   // Amway Home L.O.C. Multi-Purpose Cleaner
       "127877",  // g&h Protect Antiperspirant Deodorant
     ],
@@ -147,8 +147,8 @@ export const BUNDLES: Record<HouseholdType, Record<PvTier, string[]>> = {
       "123372",  // Nutrilite Women's Pack
       "123365",  // Nutrilite Men's Pack
       "126187",  // Nutrilite Organics Kids Complete Superfood Powder
-      "126308",  // g&h Baby Wash & Shampoo
-      "126309",  // g&h Baby Lotion
+      "125890",  // g&h Nourish Body Wash 400 mL
+      "125891",  // g&h Nourish Body Lotion
       "123781V", // Artistry Skin Nutrition Renewing Foaming Cleanser
       "111225V", // Artistry Men Gentle Face Wash
       "124106",  // Glister Multi-Action Toothpaste
@@ -161,8 +161,8 @@ export const BUNDLES: Record<HouseholdType, Record<PvTier, string[]>> = {
       "123365",  // Nutrilite Men's Pack
       "120571",  // Nutrilite Balance Within Probiotic
       "126187",  // Nutrilite Organics Kids Complete Superfood Powder
-      "126308",  // g&h Baby Wash & Shampoo
-      "126309",  // g&h Baby Lotion
+      "125890",  // g&h Nourish Body Wash 400 mL
+      "125891",  // g&h Nourish Body Lotion
       "123781V", // Artistry Skin Nutrition Renewing Foaming Cleanser
       "125517V", // Artistry Skin Nutrition Vitamin C + HA3 Daily Serum
       "111225V", // Artistry Men Gentle Face Wash
