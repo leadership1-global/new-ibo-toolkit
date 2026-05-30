@@ -38,7 +38,7 @@ function createInitialBudget(): BudgetData {
     },
     businessIncome: {
       title: "Business Income",
-      description: "Track the growth of your asset",
+      description: "Track the growth of your cashflow",
       color: "indigo",
       items: [
         { id: "bi-1", label: "Retail Margin", amount: 0 },
@@ -72,7 +72,7 @@ function createInitialBudget(): BudgetData {
     },
     businessReinvestment: {
       title: "Business Reinvestment",
-      description: "Investments in PV / Asset Building",
+      description: "Investments in PV / Business Building",
       color: "violet",
       items: [
         { id: "br-1", label: "Personal Use Products", amount: 0 },
@@ -82,7 +82,7 @@ function createInitialBudget(): BudgetData {
     },
     businessOperations: {
       title: "Business Operations",
-      description: "Asset protection and professional education infrastructure",
+      description: "Business Development and Professional Growth",
       color: "sky",
       items: [
         { id: "bo-1", label: "System Subscriptions", amount: 0 },
@@ -341,7 +341,7 @@ export default function BudgetingPage() {
             </p>
             <p className="text-base text-slate-700 dark:text-slate-300 mt-2">
               <span className="font-semibold">$800 &minus; $500 = $300</span>{" "}you&rsquo;ll free up next month.
-              That $300 can be redirected into business activities like personal volume redirection, samples, function tickets, or tools &mdash; turning lifestyle spending into asset-building capital.
+              That $300 can be redirected into business activities like personal volume redirection, samples, function tickets, or tools &mdash; turning lifestyle spending into business-building capital.
             </p>
           </div>
         </div>
@@ -451,7 +451,7 @@ export default function BudgetingPage() {
         <div className="bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-800 rounded-2xl p-5">
           <h3 className="font-bold text-lg text-indigo-900 dark:text-indigo-200 mb-2">The Reinvestment Mindset</h3>
           <p className="text-base text-indigo-800 dark:text-indigo-300">
-            Business expenses and sample purchasing are not losses &mdash; they are <span className="font-bold">Investments in PV / Asset Building</span>.
+            Business expenses and sample purchasing are not losses &mdash; they are <span className="font-bold">Investments in PV / Business Building</span>.
             Every dollar invested in volume generation today accelerates your path to the business fully covering all personal expenses.
           </p>
         </div>
