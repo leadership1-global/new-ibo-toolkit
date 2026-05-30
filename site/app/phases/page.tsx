@@ -106,7 +106,7 @@ export default function Phases() {
         <div className="border-2 border-blue-600 rounded-lg overflow-hidden w-full xl:flex-1">
           <div className="bg-blue-600 text-white px-4 py-3">
             <h2 className="text-2xl font-bold">Phase D</h2>
-            <p className="text-base italic text-blue-100">Financial Independence</p>
+            <p className="text-base italic text-blue-100">Financial Success</p>
           </div>
           <div className="p-4 space-y-4">
             <div className="text-center">
