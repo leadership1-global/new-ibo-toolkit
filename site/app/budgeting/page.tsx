@@ -350,7 +350,7 @@ export default function BudgetingPage() {
         <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur rounded-3xl p-6 shadow-xl border border-slate-100 dark:border-slate-700">
           <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-1">Debt &amp; Bill Offset Tracker</h2>
           <p className="text-slate-600 dark:text-slate-400 text-base mb-6">
-            Track how your business income progressively covers your expenses — from operational overhead to full financial freedom.
+            Track how your business income progressively covers your expenses — from operational overhead to self-sufficiency.
           </p>
           <div className="space-y-5">
             <ProgressBar
