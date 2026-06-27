@@ -109,10 +109,10 @@ export function Navigation({ children }: NavigationProps) {
         />
 
         <aside
-          className={`absolute left-0 top-0 h-full w-[86vw] max-w-sm border-r border-slate-200/60 bg-white/95 dark:border-slate-800/60 dark:bg-slate-900/95 p-5 backdrop-blur-xl transition-transform duration-300 ease-out ${isOpen ? "translate-x-0 shadow-2xl" : "-translate-x-full shadow-none"
+          className={`absolute left-0 top-0 h-full w-[86vw] max-w-sm border-r border-slate-200/60 bg-white/95 dark:border-slate-800/60 dark:bg-slate-900/95 flex flex-col p-5 backdrop-blur-xl transition-transform duration-300 ease-out ${isOpen ? "translate-x-0 shadow-2xl" : "-translate-x-full shadow-none"
             }`}
         >
-          <div className="mb-6 flex items-start justify-between gap-4">
+          <div className="mb-6 flex flex-shrink-0 items-start justify-between gap-4">
             <div>
               <p className="text-[0.65rem] font-semibold uppercase tracking-[0.45em] text-slate-500">
                 Menu
@@ -131,7 +131,7 @@ export function Navigation({ children }: NavigationProps) {
             </button>
           </div>
 
-          <nav className="flex flex-col gap-2">
+          <nav className="flex flex-col gap-2 overflow-y-auto">
             {links.map((link) => (
               <NavLink key={link.href} href={link.href}>
                 {link.label}
